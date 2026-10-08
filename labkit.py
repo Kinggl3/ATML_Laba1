@@ -119,6 +119,8 @@ class Windows:
     target: np.ndarray       # [N, horizon] — факт
     mask: np.ndarray         # [N, horizon] — True = час учитывается в метриках
     ctx_index: list          # временные метки контекста для каждого окна (для ковариат)
+    scale: np.ndarray        # [N] — масштаб MASE: MAE недельного наивного прогноза за 2 недели до точки
+                             #       прогноза (не зависит от длины контекста модели)
 
     def __len__(self):
         return len(self.meta)
@@ -134,10 +136,10 @@ def make_windows(d: LabData, stations: list[str], origins: list[pd.Timestamp],
     idx = d.y.index
     Y = d.y[stations].to_numpy(dtype="float64")
     C = d.closed[stations].to_numpy()
-    rows, ctx, tgt, msk, cidx = [], [], [], [], []
+    rows, ctx, tgt, msk, cidx, scl = [], [], [], [], [], []
     for o in origins:
         p = idx.get_loc(o)
-        if p - context < 0 or p + horizon > len(idx):
+        if p - max(context, 2 * SEASON) < 0 or p + horizon > len(idx):
             continue
         for j, s in enumerate(stations):
             m = ~C[p:p + horizon, j]
@@ -148,8 +150,9 @@ def make_windows(d: LabData, stations: list[str], origins: list[pd.Timestamp],
             tgt.append(Y[p:p + horizon, j])
             msk.append(m)
             cidx.append(idx[p - context:p])
+            scl.append(np.abs(Y[p - SEASON:p, j] - Y[p - 2 * SEASON:p - SEASON, j]).mean())
     meta = pd.DataFrame(rows, columns=["station", "origin"])
-    return Windows(meta, np.array(ctx), np.array(tgt), np.array(msk), cidx)
+    return Windows(meta, np.array(ctx), np.array(tgt), np.array(msk), cidx, np.array(scl))
 
 
 # ---------------------------------------------------------------------------
@@ -205,7 +208,7 @@ def window_stats(w: Windows, point: np.ndarray, quant: np.ndarray | None = None)
     y = np.where(m, w.target, 0.0)
     e = np.where(m, np.abs(w.target - point), 0.0)
     se = np.where(m, (w.target - point) ** 2, 0.0)
-    scale = np.abs(w.ctx[:, SEASON:] - w.ctx[:, :-SEASON]).mean(axis=1)   # MAE наивного на контексте
+    scale = w.scale
     n = m.sum(axis=1)
     df = w.meta.copy()
     df["n"] = n
@@ -321,5 +324,6 @@ def save_run(model: str, mode: str, w: Windows, point: np.ndarray, valid: np.nda
            "wape_ci_lo": lo, "wape_ci_hi": hi, "gpu_peak_gb": gpu_peak_gb(),
            **(timing or {}), **(extra or {})}
     runs = rd / "runs.csv"
-    pd.DataFrame([row]).to_csv(runs, mode="a", header=not runs.exists(), index=False)
+    old = pd.read_csv(runs) if runs.exists() else pd.DataFrame()
+    pd.concat([old, pd.DataFrame([row])], ignore_index=True).to_csv(runs, index=False)   # единая схема колонок
     return row
