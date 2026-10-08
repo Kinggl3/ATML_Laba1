@@ -1,0 +1,39 @@
+[{"stream_name":"stderr","time":10.084594347,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.084660236,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.084679204,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.084684514,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.992756551,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.992813009,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.992820108,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.992824708,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.981829161,"data":"Python 3.13.15\n"}
+,{"stream_name":"stdout","time":16.860232907,"data":"torch 2.11.0+cpu | CUDA: False \n"}
+,{"stream_name":"stdout","time":17.775844428,"data":"pandas 2.3.3 | numpy 2.1.3\n"}
+,{"stream_name":"stdout","time":17.805994177,"data":"Writing labkit.py\n"}
+,{"stream_name":"stdout","time":18.840706987,"data":"Данные: /kaggle/input/datasets/nikitospevindos/vkr-pm232-pevin-mta\n"}
+,{"stream_name":"stdout","time":18.840750871,"data":"ridership_wide: (32708, 424) | closed_wide: (32708, 424) | covariates_time: (32708, 32)\n"}
+,{"stream_name":"stdout","time":18.840757364,"data":"Период: 2023-01-01 00:00:00 – 2026-09-24 23:00:00\n"}
+,{"stream_name":"stdout","time":18.84076247,"data":"  train 01.01.2023 00:00 – 31.03.2026 23:00: 28,460 часов\n"}
+,{"stream_name":"stdout","time":18.840767283,"data":"  val   01.04.2026 00:00 – 30.06.2026 23:00: 2,184 часов\n"}
+,{"stream_name":"stdout","time":18.840772478,"data":"  test  01.07.2026 00:00 – 24.09.2026 23:00: 2,064 часов\n"}
+,{"stream_name":"stdout","time":18.840777127,"data":"NaN в ridership: 0 | отрицательных: 0\n"}
+,{"stream_name":"stdout","time":18.840782158,"data":"Доля закрытых часов: 1.65%\n"}
+,{"stream_name":"stdout","time":18.840787261,"data":"Порядок узлов графа совпадает со столбцами ridership_wide ✓\n"}
+,{"stream_name":"stdout","time":18.840792748,"data":"Станций по кластерам: {0: 96, 1: 144, 2: 100, 3: 84}\n"}
+,{"stream_name":"stdout","time":18.840798988,"data":"Ковариаты: ['is_dst_double_hour', 'hour', 'dow', 'is_weekend', 'is_holiday', 'is_day_before_holiday', 'is_day_after_holiday', 'is_school_day', 'cp_active', 'month', 'dayofyear', 'week_of_year', 'hour_sin', 'hour_cos', 'dow_sin', 'dow_cos', 'doy_sin', 'doy_cos', 'regime_student_omny', 'xmas_week', 'holiday_shopping_weekend', 'is_city_event', 'temperature_2m', 'apparent_temperature', 'relative_humidity_2m', 'precipitation', 'rain', 'snowfall', 'snow_depth', 'cloud_cover', 'wind_speed_10m', 'weather_code']\n"}
+,{"stream_name":"stdout","time":18.951190399,"data":"Станций: 40; точек прогноза в тесте: 15 (01.07 … 23.09.2026)\n"}
+,{"stream_name":"stdout","time":18.951240307,"data":"Окон в тесте: 600 (из 600 возможных; исключены окна, где станция закрыта все 24 ч)\n"}
+,{"stream_name":"stdout","time":18.951248224,"data":"Часов в метриках: 14,400; исключено закрытых часов: 0\n"}
+,{"stream_name":"stdout","time":18.951254329,"data":"Отладочных окон на val: 200\n"}
+,{"stream_name":"stdout","time":18.970051951,"data":"Сохранено: subset.json\n"}
+,{"stream_name":"stderr","time":25.419178122,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":25.419225509,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":25.651826398,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":25.651857777,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":26.652080653,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":26.771065194,"data":"[NbConvertApp] Writing 93321 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":30.345396999,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":31.24924555,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":31.249297156,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":31.249303566,"data":"[NbConvertApp] Writing 396987 bytes to __results__.html\n"}
+]
