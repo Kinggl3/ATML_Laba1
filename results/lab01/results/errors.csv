@@ -1,20 +1,87 @@
 date,model,stage,error,traceback
-2026-10-08 13:03:54.718588,lag_llama,load,"ModuleNotFoundError(""No module named 'gluonts.torch.modules.loss'"")","Traceback (most recent call last):
-  File ""/tmp/ipykernel_24/1487543636.py"", line 5, in <cell line: 0>
-    from lag_llama.gluon.estimator import LagLlamaEstimator
-  File ""/kaggle/working/lag-llama/lag_llama/gluon/estimator.py"", line 33, in <module>
-    from gluonts.torch.modules.loss import DistributionLoss, NegativeLogLikelihood
-ModuleNotFoundError: No module named 'gluonts.torch.modules.loss'
+2026-10-08 13:51:32.288379,lag_llama,zs_ctx336_val,"OutOfMemoryError('CUDA out of memory. Tried to allocate 4.10 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.20 GiB is free. Including non-PyTorch memory, this process has 13.36 GiB memory in use. Of the allocated memory 12.73 GiB is allocated by PyTorch, and 515.44 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://d","recast_generator.py"", line 181, in __call__
+    outputs = to_numpy(make_predictions(prediction_net, inputs))
+                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/gluonts/model/forecast_generator.py"", line 94, in make_predictions
+    return prediction_net(**inputs)
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File ""/tmp/lag-llama/lag_llama/gluon/lightning_module.py"", line 286, in forward
+    params, loc, scale = self.model(
+                         ~~~~~~~~~~^
+        *args,
+        ^^^^^^
+    ...<4 lines>...
+        use_kv_cache=self.use_kv_cache,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File ""/tmp/lag-llama/lag_llama/model/module.py"", line 574, in forward
+    x = block(x, use_kv_cache)
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File ""/tmp/lag-llama/lag_llama/model/module.py"", line 51, in forward
+    y = x + self.mlp(self.rms_2(x))
+            ~~~~~~~~^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File ""/tmp/lag-llama/lag_llama/model/module.py"", line 384, in forward
+    x = F.silu(self.c_fc1(x)) * self.c_fc2(x)
+        ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 4.10 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.20 GiB is free. Including non-PyTorch memory, this process has 13.36 GiB memory in use. Of the allocated memory 12.73 GiB is allocated by PyTorch, and 515.44 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
 "
-2026-10-08 13:03:59.217196,ttm_r2,zs_ctx336_val,"ValueError('could not broadcast input array from shape (128,336) into shape (128,180)')","Traceback (most recent call last):
-  File ""/tmp/ipykernel_24/2328786627.py"", line 50, in run_all
+2026-10-08 13:51:36.713007,ttm_r2,zs_ctx336_val,Exception('Expecting freq_token in forward'),"Traceback (most recent call last):
+  File ""/tmp/ipykernel_23/2328786627.py"", line 50, in run_all
     evaluate(model, f""zs_ctx{c}_{part}"", W[(part, c)], pred, extra=extra)
     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File ""/tmp/ipykernel_24/2328786627.py"", line 18, in evaluate
+  File ""/tmp/ipykernel_23/2328786627.py"", line 18, in evaluate
     p, q = predict(w.ctx[i:i + batch], i)
            ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
-  File ""/tmp/ipykernel_24/2971237823.py"", line 10, in predict
-    x[:, -c:] = ctx; m[:, -c:] = 1                         # слева нули, помеченные как «не наблюдалось»
-    ~^^^^^^^^
-ValueError: could not broadcast input array from shape (128,336) into shape (128,180)
+  File ""/tmp/ipykernel_23/1376727606.py"", line 14, in predict
+    out = model(past_values=torch.tensor(x[..., None], device=DEVICE),
+                past_observed_mask=torch.tensor(m[..., None], device=DEVICE))
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File ""/usr/local/lib/python3.13/dist-packages/tsfm_public/models/tinytimemixer/modeling_tinytimemixer.py"", line 3519, in forward
+    model_output = self.backbone(
+        past_values,
+    ...<3 lines>...
+        freq_token=freq_token,
+    )  # model_output: [batch_size x nvars x num_patch x d_model]
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File ""/usr/local/lib/python3.13/dist-packages/tsfm_public/models/tinytimemixer/modeling_tinytimemixer.py"", line 3203, in forward
+    encoder_output = self.encoder(
+        enc_input,
+    ...<3 lines>...
+        unpatched_past_values=scaled_past_values,
+    )
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py"", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File ""/usr/local/lib/python3.13/dist-packages/tsfm_public/models/tinytimemixer/modeling_tinytimemixer.py"", line 3085, in forward
+    raise Exception(""Expecting freq_token in forward"")
+Exception: Expecting freq_token in forward
 "

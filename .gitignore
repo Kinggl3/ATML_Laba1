@@ -4,3 +4,5 @@ __pycache__/
 dataset_kaggle/
 *.zip
 results/**/lag-llama/
+
+results/**/lag-llama/
