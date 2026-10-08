@@ -34,5 +34,6 @@ report/            обзор литературы и отчёт
    - `lab_02_llm_qwen`, `lab_02_llm_phi` — текстовые LLM в формате LLMTime (GPU);
    - `lab_03_ts_finetune` — дообучение Chronos-2 (LoRA и полное) и TTM (GPU);
    - `lab_03b_lightgbm` — baseline LightGBM (CPU);
+   - `lab_03c_lightgbm_ablation` — абляция LightGBM: вклад календаря, погоды, событий и признаков станций (CPU);
    - `lab_05_summary` — сводка, правило выбора, анализ ошибок, новый срез; Inputs — вывод **всех** ноутбуков выше.
 3. Результаты каждого ноутбука (`results/`) скачиваются из Output в папку `results/` репозитория.
