@@ -1,0 +1,20 @@
+date,model,stage,error,traceback
+2026-10-08 13:03:54.718588,lag_llama,load,"ModuleNotFoundError(""No module named 'gluonts.torch.modules.loss'"")","Traceback (most recent call last):
+  File ""/tmp/ipykernel_24/1487543636.py"", line 5, in <cell line: 0>
+    from lag_llama.gluon.estimator import LagLlamaEstimator
+  File ""/kaggle/working/lag-llama/lag_llama/gluon/estimator.py"", line 33, in <module>
+    from gluonts.torch.modules.loss import DistributionLoss, NegativeLogLikelihood
+ModuleNotFoundError: No module named 'gluonts.torch.modules.loss'
+"
+2026-10-08 13:03:59.217196,ttm_r2,zs_ctx336_val,"ValueError('could not broadcast input array from shape (128,336) into shape (128,180)')","Traceback (most recent call last):
+  File ""/tmp/ipykernel_24/2328786627.py"", line 50, in run_all
+    evaluate(model, f""zs_ctx{c}_{part}"", W[(part, c)], pred, extra=extra)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/tmp/ipykernel_24/2328786627.py"", line 18, in evaluate
+    p, q = predict(w.ctx[i:i + batch], i)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/tmp/ipykernel_24/2971237823.py"", line 10, in predict
+    x[:, -c:] = ctx; m[:, -c:] = 1                         # слева нули, помеченные как «не наблюдалось»
+    ~^^^^^^^^
+ValueError: could not broadcast input array from shape (128,336) into shape (128,180)
+"

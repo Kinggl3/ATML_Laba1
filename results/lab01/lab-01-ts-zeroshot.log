@@ -1,0 +1,121 @@
+[{"stream_name":"stderr","time":7.63653562,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.636590987,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.636596036,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.636616044,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.285718032,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.285763545,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.285768481,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.285771517,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":14.831742191,"data":"pip install chronos-forecasting -\u003e OK\n"}
+,{"stream_name":"stdout","time":18.726530844,"data":"pip install timesfm[torch] -\u003e OK\n"}
+,{"stream_name":"stdout","time":20.331785749,"data":"pip install --no-deps granite-tsfm -\u003e OK\n"}
+,{"stream_name":"stdout","time":21.830524655,"data":"pip install --no-deps uni2ts==2.0.0 -\u003e OK\n"}
+,{"stream_name":"stdout","time":28.360197301,"data":"pip install einops jaxtyping hydra-core lightning gluonts -\u003e OK\n"}
+,{"stream_name":"stdout","time":29.227617418,"data":"lag-llama clone: OK\n"}
+,{"stream_name":"stdout","time":37.529940938,"data":"labkit: /kaggle/input/notebooks/nikitospevindos/lab-00-setup\n"}
+,{"stream_name":"stdout","time":37.530004724,"data":"torch 2.11.0+cu128 | device: cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":37.530012287,"data":"  chronos-forecasting: 2.3.2\n"}
+,{"stream_name":"stdout","time":37.530016199,"data":"  timesfm: 3.0.2\n"}
+,{"stream_name":"stdout","time":37.530020538,"data":"  granite-tsfm: 0.3.10\n"}
+,{"stream_name":"stdout","time":37.530025061,"data":"  uni2ts: 2.0.0\n"}
+,{"stream_name":"stdout","time":37.530028881,"data":"  gluonts: 0.17.0\n"}
+,{"stream_name":"stdout","time":37.530036876,"data":"  transformers: 5.16.1\n"}
+,{"stream_name":"stdout","time":38.579030674,"data":"('val', 336) 200 окон, контекст 336\n"}
+,{"stream_name":"stdout","time":38.579067687,"data":"('test', 168) 600 окон, контекст 168\n"}
+,{"stream_name":"stdout","time":38.57907314,"data":"('test', 336) 600 окон, контекст 336\n"}
+,{"stream_name":"stdout","time":38.579077379,"data":"('test', 672) 600 окон, контекст 672\n"}
+,{"stream_name":"stderr","time":60.317813159,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":60.31784975,"data":"\n"}
+,{"stream_name":"stderr","time":60.317856733,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":69.478638585,"data":"  chronos_bolt   zs_ctx336_val          WAPE=0.1220 [0.1060; 0.1427] невалидных=0.0% p95=8.8 мс/окно GPU=1.09 ГБ\n"}
+,{"stream_name":"stdout","time":70.964535276,"data":"  chronos_bolt   zs_ctx168_test         WAPE=0.1143 [0.1062; 0.1226] невалидных=0.0% p95=1.0 мс/окно GPU=0.97 ГБ\n"}
+,{"stream_name":"stdout","time":72.838059505,"data":"  chronos_bolt   zs_ctx336_test         WAPE=0.1116 [0.1029; 0.1200] невалидных=0.0% p95=1.6 мс/окно GPU=1.09 ГБ\n"}
+,{"stream_name":"stdout","time":75.429911646,"data":"  chronos_bolt   zs_ctx672_test         WAPE=0.1085 [0.0999; 0.1172] невалидных=0.0% p95=2.7 мс/окно GPU=1.32 ГБ\n"}
+,{"stream_name":"stdout","time":79.417263545,"data":"  chronos2       zs_ctx336_val          WAPE=0.1206 [0.1051; 0.1395] невалидных=0.0% p95=2.8 мс/окно GPU=0.61 ГБ\n"}
+,{"stream_name":"stdout","time":81.084415938,"data":"  chronos2       zs_ctx168_test         WAPE=0.1214 [0.1116; 0.1315] невалидных=0.0% p95=1.2 мс/окно GPU=0.56 ГБ\n"}
+,{"stream_name":"stdout","time":83.252718971,"data":"  chronos2       zs_ctx336_test         WAPE=0.1040 [0.0961; 0.1122] невалидных=0.0% p95=2.1 мс/окно GPU=0.61 ГБ\n"}
+,{"stream_name":"stdout","time":86.551089442,"data":"  chronos2       zs_ctx672_test         WAPE=0.0979 [0.0900; 0.1056] невалидных=0.0% p95=3.6 мс/окно GPU=0.72 ГБ\n"}
+,{"stream_name":"stdout","time":100.956086447,"data":"  chronos2       cov_ctx336_test        WAPE=0.1036 [0.0953; 0.1121] невалидных=0.0% p95=22.9 мс/окно GPU=0.62 ГБ\n"}
+,{"stream_name":"stdout","time":115.925111681,"data":"  chronos2       graph_ctx336_test      WAPE=0.1012 [0.0930; 0.1095] невалидных=0.0% p95=24.1 мс/окно GPU=0.62 ГБ\n"}
+,{"stream_name":"stdout","time":127.814517455,"data":"  timesfm25      zs_ctx336_val          WAPE=0.1187 [0.1075; 0.1303] невалидных=0.0% p95=20.0 мс/окно GPU=2.64 ГБ\n"}
+,{"stream_name":"stdout","time":136.387399288,"data":"  timesfm25      zs_ctx168_test         WAPE=0.1229 [0.1142; 0.1313] невалидных=0.0% p95=16.3 мс/окно GPU=2.64 ГБ\n"}
+,{"stream_name":"stdout","time":145.479413334,"data":"  timesfm25      zs_ctx336_test         WAPE=0.1114 [0.1022; 0.1199] невалидных=0.0% p95=17.5 мс/окно GPU=2.64 ГБ\n"}
+,{"stream_name":"stdout","time":155.43863388,"data":"  timesfm25      zs_ctx672_test         WAPE=0.1078 [0.0992; 0.1160] невалидных=0.0% p95=18.9 мс/окно GPU=2.64 ГБ\n"}
+,{"stream_name":"stdout","time":159.667562583,"data":"  moirai2_small  zs_ctx336_val          WAPE=0.1138 [0.1019; 0.1274] невалидных=0.0% p95=0.9 мс/окно GPU=1.04 ГБ\n"}
+,{"stream_name":"stdout","time":160.775748054,"data":"  moirai2_small  zs_ctx168_test         WAPE=0.1372 [0.1288; 0.1457] невалидных=0.0% p95=0.3 мс/окно GPU=1.01 ГБ\n"}
+,{"stream_name":"stdout","time":161.969749889,"data":"  moirai2_small  zs_ctx336_test         WAPE=0.1059 [0.0979; 0.1141] невалидных=0.0% p95=0.3 мс/окно GPU=1.04 ГБ\n"}
+,{"stream_name":"stdout","time":163.356460591,"data":"  moirai2_small  zs_ctx672_test         WAPE=0.1012 [0.0934; 0.1092] невалидных=0.0% p95=0.6 мс/окно GPU=1.09 ГБ\n"}
+,{"stream_name":"stdout","time":164.401498163,"data":"!!! lag_llama [load] не отработал: No module named 'gluonts.torch.modules.loss'\n"}
+,{"stream_name":"stdout","time":164.401546148,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":164.401550883,"data":"  File \"/tmp/ipykernel_24/1487543636.py\", line 5, in \u003ccell line: 0\u003e\n"}
+,{"stream_name":"stdout","time":164.401586434,"data":"    from lag_llama.gluon.estimator import LagLlamaEstimator\n"}
+,{"stream_name":"stdout","time":164.401592224,"data":"  File \"/kaggle/working/lag-llama/lag_llama/gluon/estimator.py\", line 33, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":164.401598409,"data":"    from gluonts.torch.modules.loss import DistributionLoss, NegativeLogLikelihood\n"}
+,{"stream_name":"stdout","time":164.401603743,"data":"ModuleNotFoundError: No module named 'gluonts.torch.modules.loss'\n"}
+,{"stream_name":"stdout","time":164.401623949,"data":"\n"}
+,{"stream_name":"stderr","time":167.209711536,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Loading model from: ibm-granite/granite-timeseries-ttm-r2\n"}
+,{"stream_name":"stderr","time":167.2097415,"data":"\n"}
+,{"stream_name":"stderr","time":167.209747508,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Loading model from: ibm-granite/granite-timeseries-ttm-r2\n"}
+,{"stream_name":"stderr","time":167.210797113,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Model path type is 2\n"}
+,{"stream_name":"stderr","time":167.210828753,"data":"\n"}
+,{"stream_name":"stderr","time":167.210834782,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Model path type is 2\n"}
+,{"stream_name":"stderr","time":167.272438752,"data":"WARNING:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Requested `prediction_length` (24) is not exactly equal to any of the available TTM prediction lengths. Hence, TTM will forecast using the `prediction_filter_length` argument to provide the requested prediction length. Check the model card to know more about the supported context lengths and forecast/prediction lengths.\n"}
+,{"stream_name":"stderr","time":167.272460292,"data":"\n"}
+,{"stream_name":"stderr","time":167.272465591,"data":"WARNING:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Requested `prediction_length` (24) is not exactly equal to any of the available TTM prediction lengths. Hence, TTM will forecast using the `prediction_filter_length` argument to provide the requested prediction length. Check the model card to know more about the supported context lengths and forecast/prediction lengths.\n"}
+,{"stream_name":"stderr","time":167.273448519,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Attempting model load from ibm-granite/granite-timeseries-ttm-r2, revision = 180-60-ft-l1-r2.1.\n"}
+,{"stream_name":"stderr","time":167.273472321,"data":"\n"}
+,{"stream_name":"stderr","time":167.273477125,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Attempting model load from ibm-granite/granite-timeseries-ttm-r2, revision = 180-60-ft-l1-r2.1.\n"}
+,{"stream_name":"stderr","time":168.584781441,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Model loaded successfully from ibm-granite/granite-timeseries-ttm-r2, revision = 180-60-ft-l1-r2.1.\n"}
+,{"stream_name":"stderr","time":168.584830387,"data":"\n"}
+,{"stream_name":"stderr","time":168.584837667,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:Model loaded successfully from ibm-granite/granite-timeseries-ttm-r2, revision = 180-60-ft-l1-r2.1.\n"}
+,{"stream_name":"stderr","time":168.585834625,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:[TTM] context_length = 180, prediction_length = 60\n"}
+,{"stream_name":"stderr","time":168.585871743,"data":"\n"}
+,{"stream_name":"stderr","time":168.585877728,"data":"INFO:/usr/local/lib/python3.13/dist-packages/tsfm_public/toolkit/get_model.py:[TTM] context_length = 180, prediction_length = 60\n"}
+,{"stream_name":"stdout","time":168.607370046,"data":"  TTM: для контекста 336 выбрана модель с контекстом 180\n"}
+,{"stream_name":"stdout","time":168.607403255,"data":"!!! ttm_r2 [zs_ctx336_val] не отработал: could not broadcast input array from shape (128,336) into shape (128,180)\n"}
+,{"stream_name":"stdout","time":168.607412576,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":168.607418676,"data":"  File \"/tmp/ipykernel_24/2328786627.py\", line 50, in run_all\n"}
+,{"stream_name":"stdout","time":168.607439492,"data":"    evaluate(model, f\"zs_ctx{c}_{part}\", W[(part, c)], pred, extra=extra)\n"}
+,{"stream_name":"stdout","time":168.607444758,"data":"    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":168.607449849,"data":"  File \"/tmp/ipykernel_24/2328786627.py\", line 18, in evaluate\n"}
+,{"stream_name":"stdout","time":168.607454445,"data":"    p, q = predict(w.ctx[i:i + batch], i)\n"}
+,{"stream_name":"stdout","time":168.607458456,"data":"           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stdout","time":168.607462538,"data":"  File \"/tmp/ipykernel_24/2971237823.py\", line 10, in predict\n"}
+,{"stream_name":"stdout","time":168.607467407,"data":"    x[:, -c:] = ctx; m[:, -c:] = 1                         # слева нули, помеченные как «не наблюдалось»\n"}
+,{"stream_name":"stdout","time":168.60747258,"data":"    ~^^^^^^^^\n"}
+,{"stream_name":"stdout","time":168.607477108,"data":"ValueError: could not broadcast input array from shape (128,336) into shape (128,180)\n"}
+,{"stream_name":"stdout","time":168.607482496,"data":"\n"}
+,{"stream_name":"stdout","time":168.607486563,"data":"  ttm_r2: на val не отработал — тест пропускается\n"}
+,{"stream_name":"stdout","time":168.652734112,"data":"            model               mode  n_windows  invalid_share    wape  wape_ci_lo  wape_ci_hi    mase     wql   cov80   ms_p95  gpu_peak_gb\n"}
+,{"stream_name":"stdout","time":168.652765011,"data":"0    chronos_bolt      zs_ctx336_val        200            0.0  0.1220      0.1060      0.1427  0.8855  0.0996  0.8608   8.7666       1.0866\n"}
+,{"stream_name":"stdout","time":168.652770906,"data":"1    chronos_bolt     zs_ctx168_test        600            0.0  0.1143      0.1062      0.1226  0.8647  0.0925  0.8827   0.9941       0.9744\n"}
+,{"stream_name":"stdout","time":168.6527775,"data":"2    chronos_bolt     zs_ctx336_test        600            0.0  0.1116      0.1029      0.1200  0.8435  0.0906  0.8672   1.6217       1.0856\n"}
+,{"stream_name":"stdout","time":168.652785922,"data":"3    chronos_bolt     zs_ctx672_test        600            0.0  0.1085      0.0999      0.1172  0.8162  0.0886  0.8653   2.7395       1.3159\n"}
+,{"stream_name":"stdout","time":168.652788647,"data":"4        chronos2      zs_ctx336_val        200            0.0  0.1206      0.1051      0.1395  0.8280  0.0966  0.7923   2.7752       0.6144\n"}
+,{"stream_name":"stdout","time":168.652792514,"data":"5        chronos2     zs_ctx168_test        600            0.0  0.1214      0.1116      0.1315  0.8700  0.0974  0.7830   1.2248       0.5623\n"}
+,{"stream_name":"stdout","time":168.652810421,"data":"6        chronos2     zs_ctx336_test        600            0.0  0.1040      0.0961      0.1122  0.7898  0.0843  0.7560   2.0545       0.6144\n"}
+,{"stream_name":"stdout","time":168.652814864,"data":"7        chronos2     zs_ctx672_test        600            0.0  0.0979      0.0900      0.1056  0.7612  0.0789  0.7544   3.6442       0.7238\n"}
+,{"stream_name":"stdout","time":168.652819836,"data":"8        chronos2    cov_ctx336_test        600            0.0  0.1036      0.0953      0.1121  0.7968  0.0844  0.7378  22.9413       0.6190\n"}
+,{"stream_name":"stdout","time":168.652824537,"data":"9        chronos2  graph_ctx336_test        600            0.0  0.1012      0.0930      0.1095  0.7775  0.0825  0.7706  24.0650       0.6190\n"}
+,{"stream_name":"stdout","time":168.652828927,"data":"10      timesfm25      zs_ctx336_val        200            0.0  0.1187      0.1075      0.1303  0.8219  0.0966  0.8685  20.0442       2.6382\n"}
+,{"stream_name":"stdout","time":168.652833843,"data":"11      timesfm25     zs_ctx168_test        600            0.0  0.1229      0.1142      0.1313  0.9187  0.1013  0.8345  16.3485       2.6382\n"}
+,{"stream_name":"stdout","time":168.652848354,"data":"12      timesfm25     zs_ctx336_test        600            0.0  0.1114      0.1022      0.1199  0.8363  0.0922  0.8293  17.5224       2.6382\n"}
+,{"stream_name":"stdout","time":168.652855264,"data":"13      timesfm25     zs_ctx672_test        600            0.0  0.1078      0.0992      0.1160  0.8095  0.0890  0.8392  18.9491       2.6382\n"}
+,{"stream_name":"stdout","time":168.652859501,"data":"14  moirai2_small      zs_ctx336_val        200            0.0  0.1138      0.1019      0.1274  0.7524  0.0911  0.8290   0.8526       1.0392\n"}
+,{"stream_name":"stdout","time":168.652863374,"data":"15  moirai2_small     zs_ctx168_test        600            0.0  0.1372      0.1288      0.1457  1.0382  0.1110  0.8662   0.3127       1.0127\n"}
+,{"stream_name":"stdout","time":168.65286723,"data":"16  moirai2_small     zs_ctx336_test        600            0.0  0.1059      0.0979      0.1141  0.8105  0.0877  0.7968   0.3422       1.0392\n"}
+,{"stream_name":"stdout","time":168.652871555,"data":"17  moirai2_small     zs_ctx672_test        600            0.0  0.1012      0.0934      0.1092  0.7878  0.0835  0.7849   0.5897       1.0899\n"}
+,{"stream_name":"stdout","time":168.652875935,"data":"\n"}
+,{"stream_name":"stdout","time":168.652879918,"data":"ОШИБКИ:\n"}
+,{"stream_name":"stdout","time":168.652884581,"data":"       model          stage                                                                                    error\n"}
+,{"stream_name":"stdout","time":168.652889062,"data":"0  lag_llama           load                      ModuleNotFoundError(\"No module named 'gluonts.torch.modules.loss'\")\n"}
+,{"stream_name":"stdout","time":168.652893851,"data":"1     ttm_r2  zs_ctx336_val  ValueError('could not broadcast input array from shape (128,336) into shape (128,180)')\n"}
+,{"stream_name":"stderr","time":174.184388208,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":174.184416254,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":174.360765913,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":174.360801764,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":175.21382771,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":175.335815742,"data":"[NbConvertApp] Writing 250194 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":178.039974794,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":178.696910773,"data":"[NbConvertApp] Writing 545017 bytes to __results__.html\n"}
+]
