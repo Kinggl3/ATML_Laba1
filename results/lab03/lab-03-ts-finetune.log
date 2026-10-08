@@ -1,115 +1,96 @@
-[{"stream_name":"stderr","time":7.299292497,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":7.29936916,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":7.299374647,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":7.299377529,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stderr","time":7.925667011,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":7.925698226,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":7.925703286,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":7.925706872,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stdout","time":14.166186664,"data":"pip install chronos-forecasting peft -\u003e OK\n"}
-,{"stream_name":"stdout","time":15.464937479,"data":"pip install --no-deps granite-tsfm -\u003e OK\n"}
-,{"stream_name":"stdout","time":23.359576163,"data":"labkit: /kaggle/input/notebooks/nikitospevindos/lab-00-setup\n"}
-,{"stream_name":"stdout","time":23.359618661,"data":"torch 2.11.0+cu128 | device: cuda Tesla T4\n"}
-,{"stream_name":"stdout","time":23.359623546999998,"data":"  chronos-forecasting: 2.3.2\n"}
-,{"stream_name":"stdout","time":23.359626921,"data":"  peft: 0.20.0\n"}
-,{"stream_name":"stdout","time":23.359630199,"data":"  granite-tsfm: 0.3.10\n"}
-,{"stream_name":"stdout","time":23.359633593,"data":"  transformers: 5.16.1\n"}
-,{"stream_name":"stdout","time":24.521246284,"data":"('val', 336) 200 окон, контекст 336\n"}
-,{"stream_name":"stdout","time":24.521288486,"data":"('test', 168) 600 окон, контекст 168\n"}
-,{"stream_name":"stdout","time":24.521293348,"data":"('test', 336) 600 окон, контекст 336\n"}
-,{"stream_name":"stdout","time":24.521362184,"data":"('test', 672) 600 окон, контекст 672\n"}
-,{"stream_name":"stdout","time":24.632692781,"data":"Дообучение: 01.02.2026 – 31.03.2026 23:00, рядов 424, длина 2087\n"}
-,{"stream_name":"stderr","time":45.524283843,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
-,{"stream_name":"stderr","time":45.524370258,"data":"\n"}
-,{"stream_name":"stderr","time":45.524378703,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
-,{"stream_name":"stdout","time":54.779174397,"data":"!!! chronos2 [finetune_lora] не отработал: Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported\n"}
-,{"stream_name":"stdout","time":54.779208487,"data":"l/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 318, in __init__\n"}
-,{"stream_name":"stdout","time":54.779215198,"data":"    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)\n"}
-,{"stream_name":"stdout","time":54.77922099,"data":"    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":54.779226576,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 917, in inject_adapter\n"}
-,{"stream_name":"stdout","time":54.77923247,"data":"    self._create_and_replace(\n"}
-,{"stream_name":"stdout","time":54.77924943,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~^\n"}
-,{"stream_name":"stdout","time":54.779253938,"data":"        peft_config, adapter_name, target, target_name, parent, current_key=key\n"}
-,{"stream_name":"stdout","time":54.779258504,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":54.779262975,"data":"    )\n"}
-,{"stream_name":"stdout","time":54.779267177,"data":"    ^\n"}
-,{"stream_name":"stdout","time":54.779271414,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py\", line 281, in _create_and_replace\n"}
-,{"stream_name":"stdout","time":54.779276233,"data":"    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)\n"}
-,{"stream_name":"stdout","time":54.77928083,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py\", line 430, in _create_new_module\n"}
-,{"stream_name":"stdout","time":54.779285585,"data":"    new_module = dispatcher(target, adapter_name, config=lora_config, **kwargs)\n"}
-,{"stream_name":"stdout","time":54.779290099,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/torchao.py\", line 160, in dispatch_torchao\n"}
-,{"stream_name":"stdout","time":54.77930924,"data":"    if not is_torchao_available():\n"}
-,{"stream_name":"stdout","time":54.779314053,"data":"           ~~~~~~~~~~~~~~~~~~~~^^\n"}
-,{"stream_name":"stdout","time":54.779320184,"data":"  File \"/usr/local/lib/python3.13/dist-packages/peft/import_utils.py\", line 147, in is_torchao_available\n"}
-,{"stream_name":"stdout","time":54.779325186,"data":"    raise ImportError(\n"}
-,{"stream_name":"stdout","time":54.779329472,"data":"    ...\u003c2 lines\u003e...\n"}
-,{"stream_name":"stdout","time":54.77933467,"data":"    )\n"}
-,{"stream_name":"stdout","time":54.779338851,"data":"ImportError: Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported\n"}
-,{"stream_name":"stdout","time":54.779343886,"data":"\n"}
-,{"stream_name":"stdout","time":390.481755735,"data":"Chronos-2 full: обучение 5.6 мин, пик памяти 5.36 ГБ\n"}
-,{"stream_name":"stdout","time":392.641380576,"data":"  chronos2       fs5pct_ctx336_test     WAPE=0.1222 [0.1119; 0.1318] невалидных=0.0% p95=2.2 мс/окно GPU=1.11 ГБ\n"}
-,{"stream_name":"stdout","time":395.90665486,"data":"  chronos2       fs5pct_ctx672_test     WAPE=0.1064 [0.0985; 0.1148] невалидных=0.0% p95=3.8 мс/окно GPU=1.23 ГБ\n"}
-,{"stream_name":"stderr","time":396.363421041,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:Loading model from: ibm-granite/granite-timeseries-ttm-r2\n"}
-,{"stream_name":"stderr","time":396.363451837,"data":"\n"}
-,{"stream_name":"stderr","time":396.363458477,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:Loading model from: ibm-granite/granite-timeseries-ttm-r2\n"}
-,{"stream_name":"stderr","time":396.364262762,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:Model path type is 2\n"}
-,{"stream_name":"stderr","time":396.364291415,"data":"\n"}
-,{"stream_name":"stderr","time":396.364318059,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:Model path type is 2\n"}
-,{"stream_name":"stderr","time":396.419692513,"data":"WARNING:p-23:t-135533620023616:get_model.py:get_model:Requested `prediction_length` (24) is not exactly equal to any of the available TTM prediction lengths. Hence, TTM will forecast using the `prediction_filter_length` argument to provide the requested prediction length. Check the model card to know more about the supported context lengths and forecast/prediction lengths.\n"}
-,{"stream_name":"stderr","time":396.419762268,"data":"\n"}
-,{"stream_name":"stderr","time":396.419768989,"data":"WARNING:p-23:t-135533620023616:get_model.py:get_model:Requested `prediction_length` (24) is not exactly equal to any of the available TTM prediction lengths. Hence, TTM will forecast using the `prediction_filter_length` argument to provide the requested prediction length. Check the model card to know more about the supported context lengths and forecast/prediction lengths.\n"}
-,{"stream_name":"stderr","time":396.421362252,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:Attempting model load from ibm-granite/granite-timeseries-ttm-r2, revision = 512-48-ft-r2.1.\n"}
-,{"stream_name":"stderr","time":396.421386168,"data":"\n"}
-,{"stream_name":"stderr","time":396.421391196,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:Attempting model load from ibm-granite/granite-timeseries-ttm-r2, revision = 512-48-ft-r2.1.\n"}
-,{"stream_name":"stderr","time":396.457247828,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/config.json \"HTTP/1.1 307 Temporary Redirect\"\n"}
-,{"stream_name":"stderr","time":396.457335201,"data":"\n"}
-,{"stream_name":"stderr","time":396.457345687,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/config.json \"HTTP/1.1 307 Temporary Redirect\"\n"}
-,{"stream_name":"stderr","time":396.465232919,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
-,{"stream_name":"stderr","time":396.465255904,"data":"\n"}
-,{"stream_name":"stderr","time":396.465260659,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
-,{"stream_name":"stderr","time":396.479854693,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
-,{"stream_name":"stderr","time":396.479875709,"data":"\n"}
-,{"stream_name":"stderr","time":396.479880346,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
-,{"stream_name":"stderr","time":396.50515617,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/adapter_config.json \"HTTP/1.1 404 Not Found\"\n"}
-,{"stream_name":"stderr","time":396.50517482,"data":"\n"}
-,{"stream_name":"stderr","time":396.505179248,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/adapter_config.json \"HTTP/1.1 404 Not Found\"\n"}
-,{"stream_name":"stderr","time":396.528191447,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/config.json \"HTTP/1.1 307 Temporary Redirect\"\n"}
-,{"stream_name":"stderr","time":396.528224029,"data":"\n"}
-,{"stream_name":"stderr","time":396.528227762,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/config.json \"HTTP/1.1 307 Temporary Redirect\"\n"}
-,{"stream_name":"stderr","time":396.534719643,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
-,{"stream_name":"stderr","time":396.534735908,"data":"\n"}
-,{"stream_name":"stderr","time":396.534739862,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
-,{"stream_name":"stderr","time":396.559511429,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/model.safetensors \"HTTP/1.1 302 Found\"\n"}
-,{"stream_name":"stderr","time":396.559529134,"data":"\n"}
-,{"stream_name":"stderr","time":396.559533419,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/model.safetensors \"HTTP/1.1 302 Found\"\n"}
-,{"stream_name":"stderr","time":396.575930128,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: GET https://huggingface.co/api/models/ibm-granite/granite-timeseries-ttm-r2/xet-read-token/b972f0c22190b7502764526004d16e2b4ed39e8c \"HTTP/1.1 200 OK\"\n"}
-,{"stream_name":"stderr","time":396.575956188,"data":"\n"}
-,{"stream_name":"stderr","time":396.575960961,"data":"INFO:p-23:t-135533620023616:_client.py:_send_single_request:HTTP Request: GET https://huggingface.co/api/models/ibm-granite/granite-timeseries-ttm-r2/xet-read-token/b972f0c22190b7502764526004d16e2b4ed39e8c \"HTTP/1.1 200 OK\"\n"}
-,{"stream_name":"stderr","time":397.170646833,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:Model loaded successfully from ibm-granite/granite-timeseries-ttm-r2, revision = 512-48-ft-r2.1.\n"}
-,{"stream_name":"stderr","time":397.170704112,"data":"\n"}
-,{"stream_name":"stderr","time":397.17070993,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:Model loaded successfully from ibm-granite/granite-timeseries-ttm-r2, revision = 512-48-ft-r2.1.\n"}
-,{"stream_name":"stderr","time":397.171616575,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:[TTM] context_length = 512, prediction_length = 48\n"}
-,{"stream_name":"stderr","time":397.171642065,"data":"\n"}
-,{"stream_name":"stderr","time":397.171646961,"data":"INFO:p-23:t-135533620023616:get_model.py:get_model:[TTM] context_length = 512, prediction_length = 48\n"}
-,{"stream_name":"stdout","time":397.37273836,"data":"  TTM: контекст данных 336 ч, окно модели 512 ч\n"}
-,{"stream_name":"stdout","time":398.249180143,"data":"TTM: окон для дообучения 24,695\n"}
-,{"stream_name":"stdout","time":406.601264784,"data":"  эпоха 1: средняя ошибка 0.2062\n"}
-,{"stream_name":"stdout","time":414.762157503,"data":"  эпоха 2: средняя ошибка 0.1675\n"}
-,{"stream_name":"stdout","time":415.556213828,"data":"  ttm_r2         fs5pct_ctx336_test     WAPE=0.2207 [0.2106; 0.2322] невалидных=0.0% p95=0.1 мс/окно GPU=0.04 ГБ\n"}
-,{"stream_name":"stdout","time":415.59139594,"data":"      model                mode  invalid_share    wape  wape_ci_lo  wape_ci_hi    mase     wql   cov80  ms_p95  gpu_peak_gb  ft_minutes\n"}
-,{"stream_name":"stdout","time":415.591421409,"data":"0  chronos2  fs5pct_ctx336_test            0.0  0.1222      0.1119      0.1318  0.9736  0.0993  0.7592  2.2239       1.1113        5.59\n"}
-,{"stream_name":"stdout","time":415.591438197,"data":"1  chronos2  fs5pct_ctx672_test            0.0  0.1064      0.0985      0.1148  0.8596  0.0855  0.7869  3.8493       1.2287        5.59\n"}
-,{"stream_name":"stdout","time":415.591442459,"data":"2    ttm_r2  fs5pct_ctx336_test            0.0  0.2207      0.2106      0.2322  1.7141     NaN     NaN  0.0837       0.0437        0.28\n"}
-,{"stream_name":"stdout","time":415.591446505,"data":"\n"}
-,{"stream_name":"stdout","time":415.59145007,"data":"Ошибки:\n"}
-,{"stream_name":"stdout","time":415.591454386,"data":"      model          stage                                                                                                                        error\n"}
-,{"stream_name":"stdout","time":415.59145822,"data":"0  chronos2  finetune_lora  ImportError('Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported')\n"}
-,{"stream_name":"stderr","time":420.882055348,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
-,{"stream_name":"stderr","time":420.882097779,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
-,{"stream_name":"stderr","time":421.079687345,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
-,{"stream_name":"stderr","time":421.079726188,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
-,{"stream_name":"stderr","time":421.871387275,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
-,{"stream_name":"stderr","time":421.971685446,"data":"[NbConvertApp] Writing 137578 bytes to __notebook__.ipynb\n"}
-,{"stream_name":"stderr","time":424.523628173,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
-,{"stream_name":"stderr","time":425.128030728,"data":"[NbConvertApp] Writing 445578 bytes to __results__.html\n"}
+[{"stream_name":"stderr","time":6.643058396,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.643139966,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.643148399,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.643153333,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.2562391,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.256306458,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.256312831,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.256316628,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.353514709,"data":"pip install chronos-forecasting peft -\u003e OK\n"}
+,{"stream_name":"stdout","time":14.958161785,"data":"pip install --no-deps granite-tsfm -\u003e OK\n"}
+,{"stream_name":"stdout","time":15.89794597,"data":"pip uninstall torchao -\u003e OK\n"}
+,{"stream_name":"stdout","time":22.875742689,"data":"labkit: /kaggle/input/notebooks/nikitospevindos/lab-00-setup\n"}
+,{"stream_name":"stdout","time":22.875781168,"data":"torch 2.11.0+cu128 | device: cuda Tesla T4\n"}
+,{"stream_name":"stdout","time":22.875785112,"data":"  chronos-forecasting: 2.3.2\n"}
+,{"stream_name":"stdout","time":22.875787636,"data":"  peft: 0.20.0\n"}
+,{"stream_name":"stdout","time":22.87578995,"data":"  granite-tsfm: 0.3.10\n"}
+,{"stream_name":"stdout","time":22.875792288,"data":"  transformers: 5.16.1\n"}
+,{"stream_name":"stdout","time":23.984374526,"data":"('val', 336) 200 окон, контекст 336\n"}
+,{"stream_name":"stdout","time":23.984455776,"data":"('test', 168) 600 окон, контекст 168\n"}
+,{"stream_name":"stdout","time":23.984462504,"data":"('test', 336) 600 окон, контекст 336\n"}
+,{"stream_name":"stdout","time":23.984466781,"data":"('test', 672) 600 окон, контекст 672\n"}
+,{"stream_name":"stdout","time":24.106717896,"data":"Дообучение: 01.02.2026 – 31.03.2026 23:00, рядов 424, длина 2087\n"}
+,{"stream_name":"stderr","time":42.893691294999996,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":42.89373331,"data":"\n"}
+,{"stream_name":"stderr","time":42.893739353,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":360.728552283,"data":"Chronos-2 lora: обучение 5.2 мин, пик памяти 3.52 ГБ\n"}
+,{"stream_name":"stdout","time":363.275779777,"data":"  chronos2       peft_lora_ctx336_test  WAPE=0.1155 [0.1062; 0.1240] невалидных=0.0% p95=2.8 мс/окно GPU=1.12 ГБ\n"}
+,{"stream_name":"stdout","time":367.120411838,"data":"  chronos2       peft_lora_ctx672_test  WAPE=0.1056 [0.0977; 0.1137] невалидных=0.0% p95=5.0 мс/окно GPU=1.23 ГБ\n"}
+,{"stream_name":"stdout","time":743.200233676,"data":"Chronos-2 full: обучение 6.3 мин, пик памяти 5.36 ГБ\n"}
+,{"stream_name":"stdout","time":745.585782572,"data":"  chronos2       fs5pct_ctx336_test     WAPE=0.1222 [0.1119; 0.1318] невалидных=0.0% p95=2.5 мс/окно GPU=1.11 ГБ\n"}
+,{"stream_name":"stdout","time":749.198896184,"data":"  chronos2       fs5pct_ctx672_test     WAPE=0.1064 [0.0985; 0.1148] невалидных=0.0% p95=4.3 мс/окно GPU=1.23 ГБ\n"}
+,{"stream_name":"stderr","time":749.708719297,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:Loading model from: ibm-granite/granite-timeseries-ttm-r2\n"}
+,{"stream_name":"stderr","time":749.708756003,"data":"\n"}
+,{"stream_name":"stderr","time":749.708761697,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:Loading model from: ibm-granite/granite-timeseries-ttm-r2\n"}
+,{"stream_name":"stderr","time":749.709722268,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:Model path type is 2\n"}
+,{"stream_name":"stderr","time":749.709750663,"data":"\n"}
+,{"stream_name":"stderr","time":749.709756125,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:Model path type is 2\n"}
+,{"stream_name":"stderr","time":749.770966315,"data":"WARNING:p-23:t-137394150891840:get_model.py:get_model:Requested `prediction_length` (24) is not exactly equal to any of the available TTM prediction lengths. Hence, TTM will forecast using the `prediction_filter_length` argument to provide the requested prediction length. Check the model card to know more about the supported context lengths and forecast/prediction lengths.\n"}
+,{"stream_name":"stderr","time":749.771003201,"data":"\n"}
+,{"stream_name":"stderr","time":749.771008684,"data":"WARNING:p-23:t-137394150891840:get_model.py:get_model:Requested `prediction_length` (24) is not exactly equal to any of the available TTM prediction lengths. Hence, TTM will forecast using the `prediction_filter_length` argument to provide the requested prediction length. Check the model card to know more about the supported context lengths and forecast/prediction lengths.\n"}
+,{"stream_name":"stderr","time":749.771986627,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:Attempting model load from ibm-granite/granite-timeseries-ttm-r2, revision = 512-48-ft-r2.1.\n"}
+,{"stream_name":"stderr","time":749.772028157,"data":"\n"}
+,{"stream_name":"stderr","time":749.772033611,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:Attempting model load from ibm-granite/granite-timeseries-ttm-r2, revision = 512-48-ft-r2.1.\n"}
+,{"stream_name":"stderr","time":749.890352926,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/config.json \"HTTP/1.1 307 Temporary Redirect\"\n"}
+,{"stream_name":"stderr","time":749.890399015,"data":"\n"}
+,{"stream_name":"stderr","time":749.890404954,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/config.json \"HTTP/1.1 307 Temporary Redirect\"\n"}
+,{"stream_name":"stderr","time":749.933684292,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
+,{"stream_name":"stderr","time":749.93371624,"data":"\n"}
+,{"stream_name":"stderr","time":749.933721874,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
+,{"stream_name":"stderr","time":749.985100459,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
+,{"stream_name":"stderr","time":749.985191243,"data":"\n"}
+,{"stream_name":"stderr","time":749.985198557,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: GET https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
+,{"stream_name":"stderr","time":750.04297162,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/adapter_config.json \"HTTP/1.1 404 Not Found\"\n"}
+,{"stream_name":"stderr","time":750.042998447,"data":"\n"}
+,{"stream_name":"stderr","time":750.043003094,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/main/adapter_config.json \"HTTP/1.1 404 Not Found\"\n"}
+,{"stream_name":"stderr","time":750.094930997,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/config.json \"HTTP/1.1 307 Temporary Redirect\"\n"}
+,{"stream_name":"stderr","time":750.094978451,"data":"\n"}
+,{"stream_name":"stderr","time":750.094995701,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/config.json \"HTTP/1.1 307 Temporary Redirect\"\n"}
+,{"stream_name":"stderr","time":750.111988641,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
+,{"stream_name":"stderr","time":750.1120434,"data":"\n"}
+,{"stream_name":"stderr","time":750.11204945,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/ibm-granite/granite-timeseries-ttm-r2/b972f0c22190b7502764526004d16e2b4ed39e8c/config.json \"HTTP/1.1 200 OK\"\n"}
+,{"stream_name":"stderr","time":750.170889866,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/model.safetensors \"HTTP/1.1 302 Found\"\n"}
+,{"stream_name":"stderr","time":750.170941234,"data":"\n"}
+,{"stream_name":"stderr","time":750.170947207,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: HEAD https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/512-48-ft-r2.1/model.safetensors \"HTTP/1.1 302 Found\"\n"}
+,{"stream_name":"stderr","time":750.222967361,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: GET https://huggingface.co/api/models/ibm-granite/granite-timeseries-ttm-r2/xet-read-token/b972f0c22190b7502764526004d16e2b4ed39e8c \"HTTP/1.1 200 OK\"\n"}
+,{"stream_name":"stderr","time":750.223013151,"data":"\n"}
+,{"stream_name":"stderr","time":750.223019392,"data":"INFO:p-23:t-137394150891840:_client.py:_send_single_request:HTTP Request: GET https://huggingface.co/api/models/ibm-granite/granite-timeseries-ttm-r2/xet-read-token/b972f0c22190b7502764526004d16e2b4ed39e8c \"HTTP/1.1 200 OK\"\n"}
+,{"stream_name":"stderr","time":751.114521837,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:Model loaded successfully from ibm-granite/granite-timeseries-ttm-r2, revision = 512-48-ft-r2.1.\n"}
+,{"stream_name":"stderr","time":751.114597396,"data":"\n"}
+,{"stream_name":"stderr","time":751.114604329,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:Model loaded successfully from ibm-granite/granite-timeseries-ttm-r2, revision = 512-48-ft-r2.1.\n"}
+,{"stream_name":"stderr","time":751.115718232,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:[TTM] context_length = 512, prediction_length = 48\n"}
+,{"stream_name":"stderr","time":751.115763173,"data":"\n"}
+,{"stream_name":"stderr","time":751.11576905,"data":"INFO:p-23:t-137394150891840:get_model.py:get_model:[TTM] context_length = 512, prediction_length = 48\n"}
+,{"stream_name":"stdout","time":751.317374504,"data":"  TTM: контекст данных 336 ч, окно модели 512 ч\n"}
+,{"stream_name":"stdout","time":752.063731974,"data":"TTM: окон для дообучения 24,695\n"}
+,{"stream_name":"stdout","time":761.735925757,"data":"  эпоха 1: средняя ошибка 0.2062\n"}
+,{"stream_name":"stdout","time":771.245217817,"data":"  эпоха 2: средняя ошибка 0.1675\n"}
+,{"stream_name":"stdout","time":772.164638314,"data":"  ttm_r2         fs5pct_ctx336_test     WAPE=0.2207 [0.2106; 0.2322] невалидных=0.0% p95=0.1 мс/окно GPU=0.04 ГБ\n"}
+,{"stream_name":"stdout","time":772.214160815,"data":"      model                   mode  invalid_share    wape  wape_ci_lo  wape_ci_hi    mase     wql   cov80  ms_p95  gpu_peak_gb  ft_minutes\n"}
+,{"stream_name":"stdout","time":772.214202003,"data":"0  chronos2  peft_lora_ctx336_test            0.0  0.1155      0.1062      0.1240  0.9343  0.0935  0.7931  2.8055       1.1153        5.21\n"}
+,{"stream_name":"stdout","time":772.214209949,"data":"1  chronos2  peft_lora_ctx672_test            0.0  0.1056      0.0977      0.1137  0.8515  0.0847  0.8101  5.0342       1.2335        5.21\n"}
+,{"stream_name":"stdout","time":772.214215206,"data":"2  chronos2     fs5pct_ctx336_test            0.0  0.1222      0.1119      0.1318  0.9736  0.0993  0.7592  2.4527       1.1114        6.26\n"}
+,{"stream_name":"stdout","time":772.214220213,"data":"3  chronos2     fs5pct_ctx672_test            0.0  0.1064      0.0985      0.1148  0.8596  0.0855  0.7869  4.3129       1.2296        6.26\n"}
+,{"stream_name":"stdout","time":772.214225119,"data":"4    ttm_r2     fs5pct_ctx336_test            0.0  0.2207      0.2106      0.2322  1.7141     NaN     NaN  0.1012       0.0431        0.32\n"}
+,{"stream_name":"stdout","time":772.214230229,"data":"\n"}
+,{"stream_name":"stdout","time":772.214235066,"data":"Ошибки:\n"}
+,{"stream_name":"stdout","time":772.214240806,"data":"нет\n"}
+,{"stream_name":"stderr","time":778.620834068,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":778.62087591,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":778.796364565,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":778.796391441,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":779.701158446,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":779.811424766,"data":"[NbConvertApp] Writing 137744 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":782.760618532,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":783.580436685,"data":"[NbConvertApp] Writing 446542 bytes to __results__.html\n"}
 ]
