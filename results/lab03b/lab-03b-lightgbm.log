@@ -1,0 +1,67 @@
+[{"stream_name":"stderr","time":9.49266073,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.492721914,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.492729591,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.492734818,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":10.349375047,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.349458801,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.349466326,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.349471336,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":19.206926682,"data":"lightgbm 4.6.0\n"}
+,{"stream_name":"stderr","time":20.387648661,"data":"/tmp/ipykernel_16/3248445143.py:14: RuntimeWarning: Mean of empty slice\n"}
+,{"stream_name":"stderr","time":20.387700736,"data":"  F[\"lag_week_mean4\"] = np.nanmean(np.stack([lag(168), lag(336), lag(504), lag(672)]), axis=0)\n"}
+,{"stream_name":"stderr","time":20.387708257,"data":"\n"}
+,{"stream_name":"stderr","time":20.387713318,"data":"/tmp/ipykernel_16/3248445143.py:14: RuntimeWarning: Mean of empty slice\n"}
+,{"stream_name":"stderr","time":20.387718525,"data":"  F[\"lag_week_mean4\"] = np.nanmean(np.stack([lag(168), lag(336), lag(504), lag(672)]), axis=0)\n"}
+,{"stream_name":"stderr","time":20.746650937,"data":"/usr/local/lib/python3.13/dist-packages/numpy/lib/_nanfunctions_impl.py:2053: RuntimeWarning: Degrees of freedom \u003c= 0 for slice.\n"}
+,{"stream_name":"stderr","time":20.746705499,"data":"  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,\n"}
+,{"stream_name":"stderr","time":20.746711929,"data":"\n"}
+,{"stream_name":"stderr","time":20.746716836,"data":"/usr/local/lib/python3.13/dist-packages/numpy/lib/_nanfunctions_impl.py:2053: RuntimeWarning: Degrees of freedom \u003c= 0 for slice.\n"}
+,{"stream_name":"stderr","time":20.746722035,"data":"  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,\n"}
+,{"stream_name":"stdout","time":26.580702096,"data":"Таблица: 6,430,384 строк × 53 признаков, 1.4 ГБ\n"}
+,{"stream_name":"stdout","time":37.50965956,"data":"Training until validation scores don't improve for 50 rounds\n"}
+,{"stream_name":"stdout","time":114.011968408,"data":"[100]\tval's poisson: -2201.07\n"}
+,{"stream_name":"stdout","time":184.992938947,"data":"[200]\tval's poisson: -2205.79\n"}
+,{"stream_name":"stdout","time":249.813522336,"data":"[300]\tval's poisson: -2206.07\n"}
+,{"stream_name":"stdout","time":311.49075296,"data":"[400]\tval's poisson: -2206.2\n"}
+,{"stream_name":"stdout","time":366.679258012,"data":"[500]\tval's poisson: -2206.28\n"}
+,{"stream_name":"stdout","time":419.868226428,"data":"[600]\tval's poisson: -2206.33\n"}
+,{"stream_name":"stdout","time":474.298467931,"data":"[700]\tval's poisson: -2206.37\n"}
+,{"stream_name":"stdout","time":529.193664034,"data":"[800]\tval's poisson: -2206.41\n"}
+,{"stream_name":"stdout","time":581.973059035,"data":"[900]\tval's poisson: -2206.43\n"}
+,{"stream_name":"stdout","time":636.622727453,"data":"[1000]\tval's poisson: -2206.46\n"}
+,{"stream_name":"stdout","time":690.923151935,"data":"[1100]\tval's poisson: -2206.48\n"}
+,{"stream_name":"stdout","time":744.671675145,"data":"[1200]\tval's poisson: -2206.5\n"}
+,{"stream_name":"stdout","time":797.004710375,"data":"[1300]\tval's poisson: -2206.51\n"}
+,{"stream_name":"stdout","time":851.13567789,"data":"[1400]\tval's poisson: -2206.53\n"}
+,{"stream_name":"stdout","time":904.287090539,"data":"[1500]\tval's poisson: -2206.54\n"}
+,{"stream_name":"stdout","time":904.287141355,"data":"Did not meet early stopping. Best iteration is:\n"}
+,{"stream_name":"stdout","time":904.287148698,"data":"[1500]\tval's poisson: -2206.54\n"}
+,{"stream_name":"stdout","time":905.731229997,"data":"Обучение: 14.6 мин, деревьев 1500\n"}
+,{"stream_name":"stdout","time":905.73127925,"data":"Топ-15 признаков по gain:\n"}
+,{"stream_name":"stdout","time":905.731287326,"data":"lag_week_mean4         0.838\n"}
+,{"stream_name":"stdout","time":905.731293053,"data":"lag168                 0.074\n"}
+,{"stream_name":"stdout","time":905.731298053,"data":"lag336                 0.027\n"}
+,{"stream_name":"stdout","time":905.731303349,"data":"lag672                 0.024\n"}
+,{"stream_name":"stdout","time":905.731308703,"data":"lag24                  0.011\n"}
+,{"stream_name":"stdout","time":905.731313804,"data":"station                0.004\n"}
+,{"stream_name":"stdout","time":905.73131933,"data":"is_holiday             0.003\n"}
+,{"stream_name":"stdout","time":905.731324542,"data":"dow                    0.002\n"}
+,{"stream_name":"stdout","time":905.731330129,"data":"hour_sin               0.001\n"}
+,{"stream_name":"stdout","time":905.731335689,"data":"lag_week_std4          0.001\n"}
+,{"stream_name":"stdout","time":905.731341044,"data":"doy_cos                0.001\n"}
+,{"stream_name":"stdout","time":905.731346159,"data":"hour_cos               0.001\n"}
+,{"stream_name":"stdout","time":905.73135136,"data":"doy_sin                0.001\n"}
+,{"stream_name":"stdout","time":905.731356412,"data":"ev_hours_from_start    0.001\n"}
+,{"stream_name":"stdout","time":905.731362337,"data":"is_school_day          0.001\n"}
+,{"stream_name":"stdout","time":910.918497246,"data":"LightGBM val: WAPE=0.0849 [0.0782; 0.0931], MASE=0.588, невалидных 0.0%\n"}
+,{"stream_name":"stdout","time":915.728206502,"data":"LightGBM test: WAPE=0.0951 [0.0870; 0.1035], MASE=0.735, невалидных 0.0%\n"}
+,{"stream_name":"stdout","time":955.762933796,"data":"LightGBM, новый срез (384 станций, 5698 окон): WAPE=0.0890 [0.0862; 0.0917]\n"}
+,{"stream_name":"stderr","time":960.372216367,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":960.372261665,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":960.604247889,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":960.604279045,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":961.623638809,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":961.735320953,"data":"[NbConvertApp] Writing 17574 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":965.182351035,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":965.959564119,"data":"[NbConvertApp] Writing 328958 bytes to __results__.html\n"}
+]

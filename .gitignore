@@ -6,3 +6,4 @@ dataset_kaggle/
 results/**/lag-llama/
 
 results/**/lag-llama/
+results/**/lightgbm_model.txt
