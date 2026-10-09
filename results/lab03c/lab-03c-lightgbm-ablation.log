@@ -1,0 +1,61 @@
+[{"stream_name":"stderr","time":10.168209999,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":10.168269996,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":10.168277432,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":10.168281809,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":11.038848166,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":11.03892263,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":11.038928026,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":11.038931605,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":20.23243794,"data":"lightgbm 4.6.0\n"}
+,{"stream_name":"stderr","time":21.728518904,"data":"/tmp/ipykernel_16/3248445143.py:14: RuntimeWarning: Mean of empty slice\n"}
+,{"stream_name":"stderr","time":21.728562108,"data":"  F[\"lag_week_mean4\"] = np.nanmean(np.stack([lag(168), lag(336), lag(504), lag(672)]), axis=0)\n"}
+,{"stream_name":"stderr","time":21.728567506,"data":"\n"}
+,{"stream_name":"stderr","time":21.728571159,"data":"/tmp/ipykernel_16/3248445143.py:14: RuntimeWarning: Mean of empty slice\n"}
+,{"stream_name":"stderr","time":21.728574962,"data":"  F[\"lag_week_mean4\"] = np.nanmean(np.stack([lag(168), lag(336), lag(504), lag(672)]), axis=0)\n"}
+,{"stream_name":"stderr","time":22.080436737,"data":"/usr/local/lib/python3.13/dist-packages/numpy/lib/_nanfunctions_impl.py:2053: RuntimeWarning: Degrees of freedom \u003c= 0 for slice.\n"}
+,{"stream_name":"stderr","time":22.080479741,"data":"  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,\n"}
+,{"stream_name":"stderr","time":22.080485448,"data":"\n"}
+,{"stream_name":"stderr","time":22.080488279,"data":"/usr/local/lib/python3.13/dist-packages/numpy/lib/_nanfunctions_impl.py:2053: RuntimeWarning: Degrees of freedom \u003c= 0 for slice.\n"}
+,{"stream_name":"stderr","time":22.080491332,"data":"  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,\n"}
+,{"stream_name":"stdout","time":27.965310374,"data":"Таблица: 6,430,384 строк × 53 признаков, 1.4 ГБ\n"}
+,{"stream_name":"stdout","time":27.987884762,"data":"A_lags           10 признаков\n"}
+,{"stream_name":"stdout","time":27.987933526,"data":"B_lags_calendar  29 признаков\n"}
+,{"stream_name":"stdout","time":27.987939597,"data":"C_plus_weather   39 признаков\n"}
+,{"stream_name":"stdout","time":27.987943629,"data":"D_full           53 признаков\n"}
+,{"stream_name":"stdout","time":27.987947693,"data":"\n"}
+,{"stream_name":"stdout","time":27.987952257,"data":"календарь и режимы: ['is_dst_double_hour', 'hour', 'dow', 'is_weekend', 'is_holiday', 'is_day_before_holiday', 'is_day_after_holiday', 'is_school_day', 'cp_active', 'month', 'hour_sin', 'hour_cos', 'dow_sin', 'dow_cos', 'doy_sin', 'doy_cos', 'regime_student_omny', 'xmas_week', 'holiday_shopping_weekend']\n"}
+,{"stream_name":"stdout","time":27.987958144,"data":"погода: ['temperature_2m', 'apparent_temperature', 'relative_humidity_2m', 'precipitation', 'rain', 'snowfall', 'snow_depth', 'cloud_cover', 'wind_speed_10m', 'weather_code']\n"}
+,{"stream_name":"stdout","time":27.987962952,"data":"события: ['ev_today', 'ev_active', 'ev_hours_from_start', 'is_city_event']\n"}
+,{"stream_name":"stdout","time":27.987985946,"data":"станция: ['scale_weekday', 'commute_index', 'cluster', 'in_cbd', 'n_lines', 'od_out_flow', 'od_in_flow', 'latitude', 'longitude', 'station']\n"}
+,{"stream_name":"stdout","time":28.817769226,"data":"train 4,542,680 строк, val 913,344 строк\n"}
+,{"stream_name":"stdout","time":301.117392493,"data":"A_lags           test WAPE=0.1090  newslice WAPE=0.1101  деревьев 706, 4.2 мин\n"}
+,{"stream_name":"stdout","time":868.590538278,"data":"B_lags_calendar  test WAPE=0.1034  newslice WAPE=0.0993  деревьев 1305, 9.0 мин\n"}
+,{"stream_name":"stdout","time":1511.550586918,"data":"C_plus_weather   test WAPE=0.0993  newslice WAPE=0.0957  деревьев 1500, 10.2 мин\n"}
+,{"stream_name":"stdout","time":2427.278765561,"data":"D_full           test WAPE=0.0950  newslice WAPE=0.0890  деревьев 1500, 14.5 мин\n"}
+,{"stream_name":"stdout","time":2427.512843375,"data":"          набор         часть  признаков   WAPE  ДИ низ  ДИ верх   MASE  деревьев  мин\n"}
+,{"stream_name":"stdout","time":2427.512916094,"data":"         A_lags          test         10 0.1090  0.1005   0.1178 0.8248       706  4.2\n"}
+,{"stream_name":"stdout","time":2427.512924806,"data":"         A_lags newslice_test         10 0.1101  0.1066   0.1135 0.8039       706  4.2\n"}
+,{"stream_name":"stdout","time":2427.512930303,"data":"B_lags_calendar          test         29 0.1034  0.0942   0.1124 0.7865      1305  9.0\n"}
+,{"stream_name":"stdout","time":2427.512935183,"data":"B_lags_calendar newslice_test         29 0.0993  0.0960   0.1029 0.7647      1305  9.0\n"}
+,{"stream_name":"stdout","time":2427.51294014,"data":" C_plus_weather          test         39 0.0993  0.0908   0.1079 0.7648      1500 10.2\n"}
+,{"stream_name":"stdout","time":2427.512945551,"data":" C_plus_weather newslice_test         39 0.0957  0.0926   0.0990 0.7428      1500 10.2\n"}
+,{"stream_name":"stdout","time":2427.512950301,"data":"         D_full          test         53 0.0950  0.0869   0.1035 0.7344      1500 14.5\n"}
+,{"stream_name":"stdout","time":2427.512955109,"data":"         D_full newslice_test         53 0.0890  0.0862   0.0917 0.7188      1500 14.5\n"}
+,{"stream_name":"stdout","time":2436.359815014,"data":"\n"}
+,{"stream_name":"stdout","time":2436.359854428,"data":"Вклад каждой группы признаков (отрицательная разность = стало лучше):\n"}
+,{"stream_name":"stdout","time":2436.359885969,"data":"        часть                        сравнение  разность WAPE  ДИ низ  ДИ верх значимо\n"}
+,{"stream_name":"stdout","time":2436.359892599,"data":"         test         B_lags_calendar − A_lags        -0.0056 -0.0092  -0.0016      да\n"}
+,{"stream_name":"stdout","time":2436.359897344,"data":"         test C_plus_weather − B_lags_calendar        -0.0041 -0.0072  -0.0018      да\n"}
+,{"stream_name":"stdout","time":2436.359902305,"data":"         test          D_full − C_plus_weather        -0.0043 -0.0067  -0.0019      да\n"}
+,{"stream_name":"stdout","time":2436.359907289,"data":"newslice_test         B_lags_calendar − A_lags        -0.0108 -0.0137  -0.0084      да\n"}
+,{"stream_name":"stdout","time":2436.359912311,"data":"newslice_test C_plus_weather − B_lags_calendar        -0.0035 -0.0045  -0.0027      да\n"}
+,{"stream_name":"stdout","time":2436.359917817,"data":"newslice_test          D_full − C_plus_weather        -0.0068 -0.0084  -0.0053      да\n"}
+,{"stream_name":"stderr","time":2441.22496212,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2441.225011918,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2441.478232528,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2441.478276249,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2442.446370563,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2442.546184639,"data":"[NbConvertApp] Writing 20858 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2445.767389532,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2446.521193533,"data":"[NbConvertApp] Writing 340714 bytes to __results__.html\n"}
+]

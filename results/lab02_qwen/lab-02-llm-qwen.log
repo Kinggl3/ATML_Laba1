@@ -1,159 +1,96 @@
-[{"stream_name":"stderr","time":7.495021363,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":7.495087457,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":7.495093575,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":7.495097328,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stderr","time":8.110243628,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
-,{"stream_name":"stderr","time":8.110286028,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
-,{"stream_name":"stderr","time":8.110290057,"data":"0.00s - to python to disable frozen modules.\n"}
-,{"stream_name":"stderr","time":8.11029266,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
-,{"stream_name":"stdout","time":28.867964926,"data":"pip: OK\n"}
-,{"stream_name":"stdout","time":36.991488554,"data":"torch 2.11.0+cu128 | GPU: Tesla T4\n"}
-,{"stream_name":"stdout","time":36.991550927,"data":"transformers 5.19.0\n"}
-,{"stream_name":"stdout","time":38.087213395,"data":"--- P1 (1721 символов) ---\n"}
-,{"stream_name":"stdout","time":38.087260397,"data":"Continue the sequence with the next 24 values.\n"}
-,{"stream_name":"stdout","time":38.08727188,"data":"Return only JSON in the form {\"forecast\": [24 integers]} with no other text.\n"}
-,{"stream_name":"stdout","time":38.08727571,"data":"Sequence: 35, 13, 9, 5, 18, 79, 204, 397, 813, 581, 278, 285, 252, 258, 280, 277, 331, 392, 366, 200, 198, 156, 157, 69, 45, 22, 8, 9, 18, 111, 229, 430, 754, 478, 305, 246, 260, 238, 294, 295, 381, 454, 362, 279, 280, 218, 185, 145, 82, 33, 27, 14, 29, 54, 104, 162, 272, 283 …\n"}
-,{"stream_name":"stdout","time":38.087280118,"data":"\n"}
-,{"stream_name":"stdout","time":38.087282438,"data":"--- P2 (1859 символов) ---\n"}
-,{"stream_name":"stdout","time":38.087284867,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
-,{"stream_name":"stdout","time":38.087287579,"data":"Return only JSON in the form {\"forecast\": [24 integers]} with no other text.\n"}
-,{"stream_name":"stdout","time":38.087290134,"data":"Series: 35, 13, 9, 5, 18, 79, 204, 397, 813, 581, 278, 285, 252, 258, 280, 277, 331, 392, 366, 200, 198, 156, 157, 69, 45, 22, 8, 9, 18, …\n"}
-,{"stream_name":"stdout","time":38.08729264,"data":"\n"}
-,{"stream_name":"stdout","time":38.087294833,"data":"--- P3 (2121 символов) ---\n"}
-,{"stream_name":"stdout","time":38.087297183,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
-,{"stream_name":"stdout","time":38.087299825,"data":"Input statistics: min 3, max 937, mean 242. The series has strong daily (24 h) and weekly (168 h) seasonality. Values on the same weekday one week ago: 24, 8, 6, 6, 13, 92, 201, 390, 927, 599, 337, 286, 242, 230,  …\n"}
-,{"stream_name":"stdout","time":38.087302446,"data":"\n"}
-,{"stream_name":"stdout","time":38.087304626,"data":"--- fewshot (4670 символов) ---\n"}
-,{"stream_name":"stdout","time":38.087307012,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
-,{"stream_name":"stdout","time":38.087318539,"data":"Examples from the same station (one week of history, then the next day):\n"}
-,{"stream_name":"stdout","time":38.087321256,"data":"History: 52, 0, 0, 0, 0, 6, 79, 203, 448, 958, 546, 298, 237, 220, 232, 308, 275, 323, 391, 359, 245, 169, 160, 142, 40, 0, 0, 0, 0, 0, 69,  …\n"}
-,{"stream_name":"stdout","time":38.087323784,"data":"\n"}
-,{"stream_name":"stdout","time":38.102715877,"data":"'{\"forecast\": [1, 2, 3]}' -\u003e [1.0, 2.0, 3.0]\n"}
-,{"stream_name":"stdout","time":38.102735901,"data":"'Sure! {\"forecast\":[5,6]} done' -\u003e [5.0, 6.0]\n"}
-,{"stream_name":"stdout","time":38.102740348,"data":"'forecast: [7, 8, 9' -\u003e [7.0, 8.0, 9.0]\n"}
-,{"stream_name":"stdout","time":38.102743911,"data":"'no numbers' -\u003e None\n"}
-,{"stream_name":"stderr","time":55.111095583,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
-,{"stream_name":"stderr","time":55.111144315,"data":"\n"}
-,{"stream_name":"stderr","time":55.111151894,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
-,{"stream_name":"stderr","time":56.048191274,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
-,{"stream_name":"stderr","time":56.048232144,"data":"\n"}
-,{"stream_name":"stderr","time":56.048238215,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
-,{"stream_name":"stdout","time":94.057631787,"data":"Qwen/Qwen2.5-3B-Instruct: 3.09 млрд параметров, KV 36 КБ/токен\n"}
-,{"stream_name":"stdout","time":117.316488253,"data":"!!! zs_P2_ctx336_val: CUDA out of memory. Tried to allocate 1.29 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.11 GiB is free. Including non-PyTorch memory, this process has 13.45 GiB memory in use. Of the allocated memory 11.52 GiB is allocated by PyTorch, and 1.80 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":117.316548993,"data":"ib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":117.316556135,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":117.316561742,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 288, in forward\n"}
-,{"stream_name":"stdout","time":117.316566876,"data":"    hidden_states = self.mlp(hidden_states)\n"}
-,{"stream_name":"stdout","time":117.316571582,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
-,{"stream_name":"stdout","time":117.316576995,"data":"    return self._call_impl(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":117.316581304,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":117.316585673,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":117.316590283,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":117.316594455,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 46, in forward\n"}
-,{"stream_name":"stdout","time":117.316615479,"data":"    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))\n"}
-,{"stream_name":"stdout","time":117.316640507,"data":"                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\n"}
-,{"stream_name":"stdout","time":117.316646813,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.29 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.11 GiB is free. Including non-PyTorch memory, this process has 13.45 GiB memory in use. Of the allocated memory 11.52 GiB is allocated by PyTorch, and 1.80 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":117.316653294,"data":"\n"}
-,{"stream_name":"stdout","time":141.106053557,"data":"!!! zs_P2_ctx336_test: CUDA out of memory. Tried to allocate 1.29 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.06 GiB is free. Including non-PyTorch memory, this process has 13.50 GiB memory in use. Of the allocated memory 11.56 GiB is allocated by PyTorch, and 1.81 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":141.106101688,"data":"ib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":141.106111422,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":141.10611466,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 288, in forward\n"}
-,{"stream_name":"stdout","time":141.106117914,"data":"    hidden_states = self.mlp(hidden_states)\n"}
-,{"stream_name":"stdout","time":141.106120837,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
-,{"stream_name":"stdout","time":141.1061238,"data":"    return self._call_impl(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":141.106126664,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":141.106129439,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":141.106132347,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":141.106135224,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 46, in forward\n"}
-,{"stream_name":"stdout","time":141.1061382,"data":"    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))\n"}
-,{"stream_name":"stdout","time":141.10614111,"data":"                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\n"}
-,{"stream_name":"stdout","time":141.10614534,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.29 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.06 GiB is free. Including non-PyTorch memory, this process has 13.50 GiB memory in use. Of the allocated memory 11.56 GiB is allocated by PyTorch, and 1.81 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":141.106149207,"data":"\n"}
-,{"stream_name":"stdout","time":167.206323258,"data":"!!! zs_P1_ctx336_test: CUDA out of memory. Tried to allocate 1.26 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.24 GiB is free. Including non-PyTorch memory, this process has 13.32 GiB memory in use. Of the allocated memory 11.42 GiB is allocated by PyTorch, and 1.77 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":167.206374578,"data":"ib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":167.206379862,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":167.206384053,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 288, in forward\n"}
-,{"stream_name":"stdout","time":167.206388502,"data":"    hidden_states = self.mlp(hidden_states)\n"}
-,{"stream_name":"stdout","time":167.206392527,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
-,{"stream_name":"stdout","time":167.206396831,"data":"    return self._call_impl(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":167.206400743,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":167.206404637,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":167.206408796,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":167.206412716,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 46, in forward\n"}
-,{"stream_name":"stdout","time":167.206416943,"data":"    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))\n"}
-,{"stream_name":"stdout","time":167.206420971,"data":"                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\n"}
-,{"stream_name":"stdout","time":167.20642657,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.26 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.24 GiB is free. Including non-PyTorch memory, this process has 13.32 GiB memory in use. Of the allocated memory 11.42 GiB is allocated by PyTorch, and 1.77 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":167.206432212,"data":"\n"}
-,{"stream_name":"stdout","time":175.89413781,"data":"!!! zs_P3_ctx336_test: CUDA out of memory. Tried to allocate 1.42 GiB. GPU 0 has a total capacity of 14.56 GiB of which 580.81 MiB is free. Including non-PyTorch memory, this process has 13.99 GiB memory in use. Of the allocated memory 11.86 GiB is allocated by PyTorch, and 2.01 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":175.894176072,"data":"/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":175.894183575,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":175.894198475,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 288, in forward\n"}
-,{"stream_name":"stdout","time":175.894203838,"data":"    hidden_states = self.mlp(hidden_states)\n"}
-,{"stream_name":"stdout","time":175.894208104,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
-,{"stream_name":"stdout","time":175.894212136,"data":"    return self._call_impl(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":175.894244556,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":175.89424897,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":175.894253323,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":175.894257703,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 46, in forward\n"}
-,{"stream_name":"stdout","time":175.894261576,"data":"    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))\n"}
-,{"stream_name":"stdout","time":175.894265534,"data":"                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\n"}
-,{"stream_name":"stdout","time":175.894271209,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.42 GiB. GPU 0 has a total capacity of 14.56 GiB of which 580.81 MiB is free. Including non-PyTorch memory, this process has 13.99 GiB memory in use. Of the allocated memory 11.86 GiB is allocated by PyTorch, and 2.01 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":175.8942768,"data":"\n"}
-,{"stream_name":"stdout","time":196.178851737,"data":"!!! fs3_P2_ctx336_test: CUDA out of memory. Tried to allocate 3.09 GiB. GPU 0 has a total capacity of 14.56 GiB of which 2.28 GiB is free. Including non-PyTorch memory, this process has 12.28 GiB memory in use. Of the allocated memory 11.52 GiB is allocated by PyTorch, and 652.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":196.178907981,"data":"packages/transformers/models/qwen2/modeling_qwen2.py\", line 46, in forward\n"}
-,{"stream_name":"stdout","time":196.178913992,"data":"    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))\n"}
-,{"stream_name":"stdout","time":196.178918411,"data":"                               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":196.178922621,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
-,{"stream_name":"stdout","time":196.178927086,"data":"    return self._call_impl(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":196.178931063,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":196.178935025,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":196.178939347,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":196.178943284,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/activations.py\", line 103, in forward\n"}
-,{"stream_name":"stdout","time":196.178964609,"data":"    return nn.functional.silu(input)\n"}
-,{"stream_name":"stdout","time":196.178968815,"data":"           ~~~~~~~~~~~~~~~~~~^^^^^^^\n"}
-,{"stream_name":"stdout","time":196.178972892,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/functional.py\", line 2397, in silu\n"}
-,{"stream_name":"stdout","time":196.178977158,"data":"    return torch._C._nn.silu(input)\n"}
-,{"stream_name":"stdout","time":196.178981169,"data":"           ~~~~~~~~~~~~~~~~~^^^^^^^\n"}
-,{"stream_name":"stdout","time":196.178986335,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.09 GiB. GPU 0 has a total capacity of 14.56 GiB of which 2.28 GiB is free. Including non-PyTorch memory, this process has 12.28 GiB memory in use. Of the allocated memory 11.52 GiB is allocated by PyTorch, and 652.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":196.178992484,"data":"\n"}
-,{"stream_name":"stdout","time":246.352367506,"data":"  zs_P2_ctx168_test: промпт ~906 токенов, батч 32, первый батч 1.6 с/окно; ответ: '{\"forecast\": [120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 2'\n"}
-,{"stream_name":"stdout","time":1135.06445812,"data":"  qwen25_3b  zs_P2_ctx168_test      WAPE=0.1267 [0.1154; 0.1384] невалидных=100.0% p50=1563 мс/окно, всего 15.6 мин\n"}
-,{"stream_name":"stdout","time":1136.747467943,"data":"!!! zs_P2_ctx672_test: CUDA out of memory. Tried to allocate 2.52 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.06 GiB is free. Including non-PyTorch memory, this process has 13.50 GiB memory in use. Of the allocated memory 12.82 GiB is allocated by PyTorch, and 561.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":1136.747517795,"data":"/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":1136.74752242,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":1136.747525815,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 288, in forward\n"}
-,{"stream_name":"stdout","time":1136.747529131,"data":"    hidden_states = self.mlp(hidden_states)\n"}
-,{"stream_name":"stdout","time":1136.747532573,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1779, in _wrapped_call_impl\n"}
-,{"stream_name":"stdout","time":1136.747535878,"data":"    return self._call_impl(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":1136.747538823,"data":"           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
-,{"stream_name":"stdout","time":1136.747541828,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1790, in _call_impl\n"}
-,{"stream_name":"stdout","time":1136.74754487,"data":"    return forward_call(*args, **kwargs)\n"}
-,{"stream_name":"stdout","time":1136.747547908,"data":"  File \"/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py\", line 46, in forward\n"}
-,{"stream_name":"stdout","time":1136.747564555,"data":"    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))\n"}
-,{"stream_name":"stdout","time":1136.747567247,"data":"                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~\n"}
-,{"stream_name":"stdout","time":1136.747570793,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.52 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.06 GiB is free. Including non-PyTorch memory, this process has 13.50 GiB memory in use. Of the allocated memory 12.82 GiB is allocated by PyTorch, and 561.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
-,{"stream_name":"stdout","time":1136.747574195,"data":"\n"}
-,{"stream_name":"stdout","time":1137.116319343,"data":"       model               mode  n_windows  invalid_share    wape  wape_ci_lo  wape_ci_hi    mase     ms_p50  gpu_peak_gb\n"}
-,{"stream_name":"stdout","time":1137.116346423,"data":"0  qwen25_3b  zs_P2_ctx168_test        600            1.0  0.1267      0.1154      0.1384  0.9503  1563.1215       10.216\n"}
-,{"stream_name":"stdout","time":1137.116352226,"data":"\n"}
-,{"stream_name":"stdout","time":1137.116355969,"data":"Ошибки:\n"}
-,{"stream_name":"stdout","time":1137.116361374,"data":"                stage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 error\n"}
-,{"stream_name":"stdout","time":1137.116372289,"data":"0    zs_P2_ctx336_val  OutOfMemoryError('CUDA out of memory. Tried to allocate 1.29 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.11 GiB is free. Including non-PyTorch memory, this process has 13.45 GiB memory in use. Of the allocated memory 11.52 GiB is allocated by PyTorch, and 1.80 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://doc\n"}
-,{"stream_name":"stdout","time":1137.116378009,"data":"1   zs_P2_ctx336_test  OutOfMemoryError('CUDA out of memory. Tried to allocate 1.29 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.06 GiB is free. Including non-PyTorch memory, this process has 13.50 GiB memory in use. Of the allocated memory 11.56 GiB is allocated by PyTorch, and 1.81 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://doc\n"}
-,{"stream_name":"stdout","time":1137.116385431,"data":"2   zs_P1_ctx336_test  OutOfMemoryError('CUDA out of memory. Tried to allocate 1.26 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.24 GiB is free. Including non-PyTorch memory, this process has 13.32 GiB memory in use. Of the allocated memory 11.42 GiB is allocated by PyTorch, and 1.77 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://doc\n"}
-,{"stream_name":"stdout","time":1137.116392066,"data":"3   zs_P3_ctx336_test  OutOfMemoryError('CUDA out of memory. Tried to allocate 1.42 GiB. GPU 0 has a total capacity of 14.56 GiB of which 580.81 MiB is free. Including non-PyTorch memory, this process has 13.99 GiB memory in use. Of the allocated memory 11.86 GiB is allocated by PyTorch, and 2.01 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://d\n"}
-,{"stream_name":"stdout","time":1137.11640893,"data":"4  fs3_P2_ctx336_test  OutOfMemoryError('CUDA out of memory. Tried to allocate 3.09 GiB. GPU 0 has a total capacity of 14.56 GiB of which 2.28 GiB is free. Including non-PyTorch memory, this process has 12.28 GiB memory in use. Of the allocated memory 11.52 GiB is allocated by PyTorch, and 652.24 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://d\n"}
-,{"stream_name":"stdout","time":1137.116415793,"data":"5   zs_P2_ctx672_test  OutOfMemoryError('CUDA out of memory. Tried to allocate 2.52 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.06 GiB is free. Including non-PyTorch memory, this process has 13.50 GiB memory in use. Of the allocated memory 12.82 GiB is allocated by PyTorch, and 561.16 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://d\n"}
-,{"stream_name":"stdout","time":1137.116421458,"data":"\n"}
-,{"stream_name":"stdout","time":1137.11642576,"data":"responses__qwen25_3b__zs_P2_ctx168_test.parquet: невалидных 600 из 600\n"}
-,{"stream_name":"stdout","time":1137.11643029,"data":"   пример: '{\"forecast\": [120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 255, 260, 265, 270]}'\n"}
-,{"stream_name":"stdout","time":1137.1164352,"data":"   пример: '{\"forecast\": [120, 111, 77, 51, 28, 20, 4, 2, 5, 18, 36, 109, 252, 501, 308, 168, 190, 169, 184, 185, 205, 232, 231, 242, 167, 135, 81, 44, 38, 27, 13, 6, 9, 8, 9, 27, 33, 123, 144, 164, 254, 227, 256'\n"}
-,{"stream_name":"stderr","time":1142.493078612,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
-,{"stream_name":"stderr","time":1142.49310905,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
-,{"stream_name":"stderr","time":1142.672113608,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
-,{"stream_name":"stderr","time":1142.672156459,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
-,{"stream_name":"stderr","time":1143.516691214,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
-,{"stream_name":"stderr","time":1143.622905682,"data":"[NbConvertApp] Writing 171943 bytes to __notebook__.ipynb\n"}
-,{"stream_name":"stderr","time":1146.305164308,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
-,{"stream_name":"stderr","time":1146.936333486,"data":"[NbConvertApp] Writing 471287 bytes to __results__.html\n"}
+[{"stream_name":"stderr","time":12.92652238,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.926589893,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.926596986,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.926601102,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":13.750242988,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":13.750273666,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":13.750278658,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":13.750282627,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":39.376890511,"data":"pip: OK\n"}
+,{"stream_name":"stdout","time":55.2257248,"data":"torch 2.11.0+cu128 | GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":55.225762884,"data":"transformers 5.19.0\n"}
+,{"stream_name":"stdout","time":56.56834352,"data":"--- P1 (1796 символов) ---\n"}
+,{"stream_name":"stdout","time":56.568375147,"data":"Continue the sequence with the next 24 values.\n"}
+,{"stream_name":"stdout","time":56.568381756,"data":"Return only JSON in the form {\"forecast\": [24 integers]}: exactly 24 numbers, one per hour from 00:00 to 23:00 of the forecast day, with no other text.\n"}
+,{"stream_name":"stdout","time":56.568387209,"data":"Sequence: 35, 13, 9, 5, 18, 79, 204, 397, 813, 581, 278, 285, 252, 258, 280, 277, 331, 392, 366, 200, 198, 156, 157, 69, 45, 22, 8, 9, 18, 111, 229, 430, 754, 478, 305, 246, 260, 238, 294, 295, 381, 45 …\n"}
+,{"stream_name":"stdout","time":56.568393575,"data":"\n"}
+,{"stream_name":"stdout","time":56.568397566,"data":"--- P2 (1934 символов) ---\n"}
+,{"stream_name":"stdout","time":56.568401777,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
+,{"stream_name":"stdout","time":56.568406246,"data":"Return only JSON in the form {\"forecast\": [24 integers]}: exactly 24 numbers, one per hour from 00:00 to 23:00 of the forecast day, with no other text.\n"}
+,{"stream_name":"stdout","time":56.568411767,"data":"Series: 35, 13, 9, 5, 18, 79, 204, 397, 813, 581, 278, 285, 2 …\n"}
+,{"stream_name":"stdout","time":56.568416774,"data":"\n"}
+,{"stream_name":"stdout","time":56.568421277,"data":"--- P3 (2196 символов) ---\n"}
+,{"stream_name":"stdout","time":56.568425606,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
+,{"stream_name":"stdout","time":56.568430335,"data":"Input statistics: min 3, max 937, mean 242. The series has strong daily (24 h) and weekly (168 h) seasonality. Values on the same weekday one week ago: 24, 8, 6, 6, 13, 92, 201, 390, 927, 599, 337, 286, 242, 230,  …\n"}
+,{"stream_name":"stdout","time":56.568435581,"data":"\n"}
+,{"stream_name":"stdout","time":56.56844018,"data":"--- fewshot (4745 символов) ---\n"}
+,{"stream_name":"stdout","time":56.568444065,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
+,{"stream_name":"stdout","time":56.568459627,"data":"Examples from the same station (one week of history, then the next day):\n"}
+,{"stream_name":"stdout","time":56.568463764,"data":"History: 52, 0, 0, 0, 0, 6, 79, 203, 448, 958, 546, 298, 237, 220, 232, 308, 275, 323, 391, 359, 245, 169, 160, 142, 40, 0, 0, 0, 0, 0, 69,  …\n"}
+,{"stream_name":"stdout","time":56.56846734,"data":"\n"}
+,{"stream_name":"stdout","time":56.586172576,"data":"'{\"forecast\": [1, 2, 3]}' -\u003e [1.0, 2.0, 3.0]\n"}
+,{"stream_name":"stdout","time":56.586201078,"data":"'Sure! {\"forecast\":[5,6]} done' -\u003e [5.0, 6.0]\n"}
+,{"stream_name":"stdout","time":56.586206601,"data":"'forecast: [7, 8, 9' -\u003e [7.0, 8.0, 9.0]\n"}
+,{"stream_name":"stdout","time":56.586211113,"data":"'no numbers' -\u003e None\n"}
+,{"stream_name":"stderr","time":82.729040227,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":82.729097185,"data":"\n"}
+,{"stream_name":"stderr","time":82.729103523,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":84.309005174,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":84.309037132,"data":"\n"}
+,{"stream_name":"stderr","time":84.309042216,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stdout","time":125.894707103,"data":"Qwen/Qwen2.5-3B-Instruct: 3.09 млрд параметров, KV 36 КБ/токен\n"}
+,{"stream_name":"stdout","time":142.553752716,"data":"проверка P1: 4/4 ответов с ≥24 числами, 16 с; пример: '{\"forecast\": [206, 198, 184, 179, 165, 145, 206, 198, 184, 179, 165, 145, 206, 198, 184, 179, 165, 145, 206, 198, 184, 1'\n"}
+,{"stream_name":"stdout","time":155.71307107,"data":"проверка P2: 4/4 ответов с ≥24 числами, 13 с; пример: '{\"forecast\": [120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 1'\n"}
+,{"stream_name":"stdout","time":170.233392539,"data":"проверка P3: 4/4 ответов с ≥24 числами, 15 с; пример: '{\"forecast\": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]}'\n"}
+,{"stream_name":"stdout","time":202.213457424,"data":"проверка fewshot: 4/4 ответов с ≥24 числами, 32 с; пример: '{\"forecast\": [12, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10'\n"}
+,{"stream_name":"stdout","time":222.088943244,"data":"  zs_P2_ctx336_val: промпт ~1708 токенов, батч 6, первый батч 3.3 с/окно; ответ: '{\"forecast\": [120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144]}'\n"}
+,{"stream_name":"stdout","time":842.147080356,"data":"  qwen25_3b  zs_P2_ctx336_val       WAPE=0.8411 [0.8161; 0.8634] невалидных=0.5% (строго 99.0%) p50=3149 мс/окно, всего 10.6 мин\n"}
+,{"stream_name":"stdout","time":864.983671985,"data":"  zs_P2_ctx336_test: промпт ~1724 токенов, батч 6, первый батч 3.7 с/окно; ответ: '{\"forecast\": [123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148]}'\n"}
+,{"stream_name":"stdout","time":2814.736846775,"data":"  qwen25_3b  zs_P2_ctx336_test      WAPE=0.8208 [0.7980; 0.8430] невалидных=0.2% (строго 99.0%) p50=3360 мс/окно, всего 32.9 мин\n"}
+,{"stream_name":"stdout","time":2837.171362465,"data":"  zs_P1_ctx336_test: промпт ~1676 токенов, батч 6, первый батч 3.7 с/окно; ответ: '{\"forecast\": [399, 298, 299, 220, 300, 176, 99, 123, 79, 67, 41, 57, 81, 101, 190, 221, 310, 374, 425, 383, 371, 323, 309, 311, 340, 720, 599, 730, 66'\n"}
+,{"stream_name":"stdout","time":4907.801134511,"data":"  qwen25_3b  zs_P1_ctx336_test      WAPE=0.9652 [0.8909; 1.0618] невалидных=0.0% (строго 99.7%) p50=3432 мс/окно, всего 34.9 мин\n"}
+,{"stream_name":"stdout","time":4926.279345385,"data":"  zs_P3_ctx336_test: промпт ~1883 токенов, батч 5, первый батч 3.6 с/окно; ответ: '{\"forecast\": [120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120]}'\n"}
+,{"stream_name":"stdout","time":7087.667785998,"data":"  qwen25_3b  zs_P3_ctx336_test      WAPE=0.7401 [0.7122; 0.7665] невалидных=0.2% (строго 99.5%) p50=3736 мс/окно, всего 36.3 мин\n"}
+,{"stream_name":"stdout","time":7105.839120234,"data":"  fs3_P2_ctx336_test: промпт ~4406 токенов, батч 2, первый батч 8.5 с/окно; ответ: '{\"forecast\": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}'\n"}
+,{"stream_name":"stdout","time":12837.407621838,"data":"  qwen25_3b  fs3_P2_ctx336_test     WAPE=0.3267 [0.2917; 0.3613] невалидных=0.0% (строго 94.7%) p50=9542 мс/окно, всего 95.8 мин\n"}
+,{"stream_name":"stdout","time":12857.822076215,"data":"  zs_P2_ctx168_test: промпт ~935 токенов, батч 10, первый батч 2.0 с/окно; ответ: '{\"forecast\": [120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210, 215, 220, 225, 230, 235, 240, 245, 250, 2'\n"}
+,{"stream_name":"stdout","time":13997.014566109,"data":"  qwen25_3b  zs_P2_ctx168_test      WAPE=0.8047 [0.7664; 0.8570] невалидных=0.0% (строго 99.8%) p50=1953 мс/окно, всего 19.3 мин\n"}
+,{"stream_name":"stdout","time":14014.39409942,"data":"  zs_P2_ctx672_test: промпт ~3299 токенов, батч 3, первый батч 5.6 с/окно; ответ: '{\"forecast\": [120, 122, 125, 128, 132, 136, 140, 144, 148, 152, 156, 160, 164, 168, 172, 176, 180, 184, 188, 192, 196, 200, 204, 208, 212, 216]}'\n"}
+,{"stream_name":"stdout","time":17376.748722695,"data":"  qwen25_3b  zs_P2_ctx672_test      WAPE=0.8178 [0.7976; 0.8352] невалидных=0.0% (строго 99.7%) p50=5603 мс/окно, всего 56.3 мин\n"}
+,{"stream_name":"stdout","time":17376.813718824,"data":"       model                mode  n_windows  invalid_share    wape  wape_ci_lo  wape_ci_hi    mase     ms_p50  gpu_peak_gb\n"}
+,{"stream_name":"stdout","time":17376.813747013,"data":"0  qwen25_3b    zs_P2_ctx336_val        200         0.0050  0.8411      0.8161      0.8634  5.7299  3148.8968       7.6480\n"}
+,{"stream_name":"stdout","time":17376.813753668,"data":"1  qwen25_3b   zs_P2_ctx336_test        600         0.0017  0.8208      0.7980      0.8430  6.2238  3360.4425       7.6487\n"}
+,{"stream_name":"stdout","time":17376.813758701,"data":"2  qwen25_3b   zs_P1_ctx336_test        600         0.0000  0.9652      0.8909      1.0618  6.7241  3431.6747       7.6131\n"}
+,{"stream_name":"stdout","time":17376.813763106,"data":"3  qwen25_3b   zs_P3_ctx336_test        600         0.0017  0.7401      0.7122      0.7665  5.8278  3736.4766       7.5195\n"}
+,{"stream_name":"stdout","time":17376.813767434,"data":"4  qwen25_3b  fs3_P2_ctx336_test        600         0.0000  0.3267      0.2917      0.3613  2.7041  9542.0311      13.3542\n"}
+,{"stream_name":"stdout","time":17376.813771751,"data":"5  qwen25_3b   zs_P2_ctx168_test        600         0.0000  0.8047      0.7664      0.8570  6.0661  1953.2804       7.4776\n"}
+,{"stream_name":"stdout","time":17376.813788156,"data":"6  qwen25_3b   zs_P2_ctx672_test        600         0.0000  0.8178      0.7976      0.8352  6.2872  5603.2526       7.6177\n"}
+,{"stream_name":"stdout","time":17376.813792343,"data":"\n"}
+,{"stream_name":"stdout","time":17376.813795871,"data":"Ошибки:\n"}
+,{"stream_name":"stdout","time":17376.8138005,"data":"нет\n"}
+,{"stream_name":"stdout","time":17376.813803956,"data":"\n"}
+,{"stream_name":"stdout","time":17376.813807111,"data":"responses__qwen25_3b__fs3_P2_ctx336_test.parquet: невалидных 0 из 600\n"}
+,{"stream_name":"stdout","time":17376.813810971,"data":"\n"}
+,{"stream_name":"stdout","time":17376.813814197,"data":"responses__qwen25_3b__zs_P1_ctx336_test.parquet: невалидных 0 из 600\n"}
+,{"stream_name":"stdout","time":17376.813818022,"data":"\n"}
+,{"stream_name":"stdout","time":17376.8138212,"data":"responses__qwen25_3b__zs_P2_ctx168_test.parquet: невалидных 0 из 600\n"}
+,{"stream_name":"stdout","time":17376.813824888,"data":"\n"}
+,{"stream_name":"stdout","time":17376.813828158,"data":"responses__qwen25_3b__zs_P2_ctx336_test.parquet: невалидных 1 из 600\n"}
+,{"stream_name":"stdout","time":17376.81383185,"data":"   пример: '{\"forecast\": [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393]}'\n"}
+,{"stream_name":"stdout","time":17376.81383595,"data":"\n"}
+,{"stream_name":"stdout","time":17376.813839865,"data":"responses__qwen25_3b__zs_P2_ctx336_val.parquet: невалидных 1 из 200\n"}
+,{"stream_name":"stdout","time":17376.81384367,"data":"   пример: '{\"forecast\": [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040]}'\n"}
+,{"stream_name":"stdout","time":17376.81384943,"data":"\n"}
+,{"stream_name":"stdout","time":17376.8138528,"data":"responses__qwen25_3b__zs_P2_ctx672_test.parquet: невалидных 0 из 600\n"}
+,{"stream_name":"stdout","time":17376.813857202,"data":"\n"}
+,{"stream_name":"stdout","time":17376.813860568,"data":"responses__qwen25_3b__zs_P3_ctx336_test.parquet: невалидных 1 из 600\n"}
+,{"stream_name":"stdout","time":17376.813863871,"data":"   пример: '{\"forecast\": [24 integers]}'\n"}
+,{"stream_name":"stderr","time":17382.141236036,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":17382.141263251,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":17382.348152069,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":17382.348192689,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":17383.227239048,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":17383.326437467,"data":"[NbConvertApp] Writing 162871 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":17385.839691165,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":17386.46794314,"data":"[NbConvertApp] Writing 475348 bytes to __results__.html\n"}
 ]

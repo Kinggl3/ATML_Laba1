@@ -1,0 +1,68 @@
+[{"stream_name":"stderr","time":6.069571309,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.069642855,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.069649396,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.069653405,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.649410855,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.649469382,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.649475559,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.649479589,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":26.630484714,"data":"pip: OK\n"}
+,{"stream_name":"stdout","time":32.903830994,"data":"torch 2.11.0+cu128 | GPU: Tesla T4\n"}
+,{"stream_name":"stdout","time":32.903867889,"data":"transformers 5.19.0\n"}
+,{"stream_name":"stdout","time":33.763854754,"data":"--- P1 (1796 символов) ---\n"}
+,{"stream_name":"stdout","time":33.76388919,"data":"Continue the sequence with the next 24 values.\n"}
+,{"stream_name":"stdout","time":33.763895461,"data":"Return only JSON in the form {\"forecast\": [24 integers]}: exactly 24 numbers, one per hour from 00:00 to 23:00 of the forecast day, with no other text.\n"}
+,{"stream_name":"stdout","time":33.763899762,"data":"Sequence: 35, 13, 9, 5, 18, 79, 204, 397, 813, 581, 278, 285, 252, 258, 280, 277, 331, 392, 366, 200, 198, 156, 157, 69, 45, 22, 8, 9, 18, 111, 229, 430, 754, 478, 305, 246, 260, 238, 294, 295, 381, 45 …\n"}
+,{"stream_name":"stdout","time":33.763906077,"data":"\n"}
+,{"stream_name":"stdout","time":33.763910318,"data":"--- P2 (1934 символов) ---\n"}
+,{"stream_name":"stdout","time":33.763914365,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
+,{"stream_name":"stdout","time":33.763918122,"data":"Return only JSON in the form {\"forecast\": [24 integers]}: exactly 24 numbers, one per hour from 00:00 to 23:00 of the forecast day, with no other text.\n"}
+,{"stream_name":"stdout","time":33.763922135,"data":"Series: 35, 13, 9, 5, 18, 79, 204, 397, 813, 581, 278, 285, 2 …\n"}
+,{"stream_name":"stdout","time":33.763925842,"data":"\n"}
+,{"stream_name":"stdout","time":33.763929564,"data":"--- P3 (2196 символов) ---\n"}
+,{"stream_name":"stdout","time":33.763933717,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
+,{"stream_name":"stdout","time":33.763937985,"data":"Input statistics: min 3, max 937, mean 242. The series has strong daily (24 h) and weekly (168 h) seasonality. Values on the same weekday one week ago: 24, 8, 6, 6, 13, 92, 201, 390, 927, 599, 337, 286, 242, 230,  …\n"}
+,{"stream_name":"stdout","time":33.763942267,"data":"\n"}
+,{"stream_name":"stdout","time":33.763945872,"data":"--- fewshot (4745 символов) ---\n"}
+,{"stream_name":"stdout","time":33.763949401,"data":"Hourly number of entries at a New York City subway station. The series below has 336 values, one per hour, starting Wednesday 00:00. Forecast the next 24 hours: Wednesday 00:00 to 23:00.\n"}
+,{"stream_name":"stdout","time":33.763965524,"data":"Examples from the same station (one week of history, then the next day):\n"}
+,{"stream_name":"stdout","time":33.763969472,"data":"History: 52, 0, 0, 0, 0, 6, 79, 203, 448, 958, 546, 298, 237, 220, 232, 308, 275, 323, 391, 359, 245, 169, 160, 142, 40, 0, 0, 0, 0, 0, 69,  …\n"}
+,{"stream_name":"stdout","time":33.763973034,"data":"\n"}
+,{"stream_name":"stdout","time":33.78383251,"data":"'{\"forecast\": [1, 2, 3]}' -\u003e [1.0, 2.0, 3.0]\n"}
+,{"stream_name":"stdout","time":33.783863453,"data":"'Sure! {\"forecast\":[5,6]} done' -\u003e [5.0, 6.0]\n"}
+,{"stream_name":"stdout","time":33.783869553,"data":"'forecast: [7, 8, 9' -\u003e [7.0, 8.0, 9.0]\n"}
+,{"stream_name":"stdout","time":33.783874763,"data":"'no numbers' -\u003e None\n"}
+,{"stream_name":"stderr","time":49.658642392,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":49.658688653,"data":"\n"}
+,{"stream_name":"stderr","time":49.658695031,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":49.694236921,"data":"[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.\n"}
+,{"stream_name":"stderr","time":49.694272217,"data":"\n"}
+,{"stream_name":"stderr","time":49.694278358,"data":"[transformers] This model config has set a `rope_parameters['original_max_position_embeddings']` field, to be used together with `max_position_embeddings` to determine a scaling factor. Please set the `factor` field of `rope_parameters`with this ratio instead -- we recommend the use of this field over `original_max_position_embeddings`, as it is compatible with most model architectures.\n"}
+,{"stream_name":"stderr","time":54.171553907,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":54.17160268,"data":"\n"}
+,{"stream_name":"stderr","time":54.171609113,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stdout","time":103.105740664,"data":"microsoft/Phi-3.5-mini-instruct: 3.82 млрд параметров, KV 384 КБ/токен\n"}
+,{"stream_name":"stdout","time":125.291466546,"data":"проверка P2: 4/4 ответов с ≥24 числами, 22 с; пример: '{\"forecast\": [34, 14, 12, 5, 16, 60, 177, 395, 733, 483, 224, 222, 219, 236, 280, 281, 287, 385, 340, 211, 162, 134, 85,'\n"}
+,{"stream_name":"stdout","time":143.936856078,"data":"  zs_P2_ctx336_val: промпт ~1709 токенов, батч 3, первый батч 6.1 с/окно; ответ: '{\"forecast\": [34, 14, 12, 5, 16, 60, 177, 395, 733, 483, 224, 222, 219, 236, 280, 281, 287, 385, 340, 211, 162, 134, 85, 68, 22, 11, 21, 34, 20, 84, 1'\n"}
+,{"stream_name":"stdout","time":1373.341584756,"data":"  phi35_mini zs_P2_ctx336_val       WAPE=0.2104 [0.1738; 0.2506] невалидных=0.0% (строго 100.0%) p50=6201 мс/окно, всего 20.8 мин\n"}
+,{"stream_name":"stdout","time":1393.921426101,"data":"  zs_P2_ctx336_test: промпт ~1729 токенов, батч 3, первый батч 6.7 с/окно; ответ: '{\"forecast\": [35, 13, 9, 5, 18, 79, 204, 397, 813, 581, 278, 285, 252, 258, 280, 277, 331, 392, 366, 200, 198, 156, 157, 69, 45, 22, 8, 9, 18, 111, 22'\n"}
+,{"stream_name":"stdout","time":5185.818327654,"data":"  phi35_mini zs_P2_ctx336_test      WAPE=0.1536 [0.1334; 0.1810] невалидных=0.0% (строго 100.0%) p50=6320 мс/окно, всего 63.5 мин\n"}
+,{"stream_name":"stdout","time":5185.858326772,"data":"        model               mode  n_windows  invalid_share    wape  wape_ci_lo  wape_ci_hi    mase     ms_p50  gpu_peak_gb\n"}
+,{"stream_name":"stdout","time":5185.858359658,"data":"0  phi35_mini   zs_P2_ctx336_val        200            0.0  0.2104      0.1738      0.2506  1.3372  6201.0455      10.5754\n"}
+,{"stream_name":"stdout","time":5185.85836634,"data":"1  phi35_mini  zs_P2_ctx336_test        600            0.0  0.1536      0.1334      0.1810  1.1149  6319.6193      10.5827\n"}
+,{"stream_name":"stdout","time":5185.858371461,"data":"\n"}
+,{"stream_name":"stdout","time":5185.858375789,"data":"Ошибки:\n"}
+,{"stream_name":"stdout","time":5185.858380213,"data":"нет\n"}
+,{"stream_name":"stdout","time":5185.858384052,"data":"\n"}
+,{"stream_name":"stdout","time":5185.858388031,"data":"responses__phi35_mini__zs_P2_ctx336_test.parquet: невалидных 0 из 600\n"}
+,{"stream_name":"stdout","time":5185.858392324,"data":"\n"}
+,{"stream_name":"stdout","time":5185.858396087,"data":"responses__phi35_mini__zs_P2_ctx336_val.parquet: невалидных 0 из 200\n"}
+,{"stream_name":"stderr","time":5191.187286001,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5191.187329591,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5191.332888423,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5191.332916212,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5192.085971045,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":5192.187336108,"data":"[NbConvertApp] Writing 182821 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":5194.655258987,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5195.228964325,"data":"[NbConvertApp] Writing 488915 bytes to __results__.html\n"}
+]
