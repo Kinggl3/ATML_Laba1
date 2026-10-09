@@ -1,0 +1,243 @@
+[{"stream_name":"stderr","time":6.450423018,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.45047775,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.450482731,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.450485266,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.02842887,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.028469398,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.028475527,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.028479617,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":13.123374203,"data":"pip install chronos-forecasting peft -\u003e OK\n"}
+,{"stream_name":"stdout","time":14.05309399,"data":"pip uninstall torchao -\u003e OK\n"}
+,{"stream_name":"stdout","time":20.799767562,"data":"labkit: /kaggle/input/notebooks/nikitospevindos/lab-00-setup | device: cuda\n"}
+,{"stream_name":"stdout","time":21.555489451,"data":"станций в данных: 424, в подвыборке: 40, точек прогноза: 15\n"}
+,{"stream_name":"stdout","time":21.755665314,"data":"/kaggle/input/notebooks/nikitospevindos/lab-01-ts-zeroshot/results: 26 прогонов, модели: ['chronos2', 'chronos_bolt', 'lag_llama', 'moirai2_small', 'timesfm25', 'ttm_r2']\n"}
+,{"stream_name":"stdout","time":21.755699596,"data":"/kaggle/input/notebooks/nikitospevindos/lab-03-ts-finetune/results: 5 прогонов, модели: ['chronos2', 'ttm_r2']\n"}
+,{"stream_name":"stdout","time":21.755706246,"data":"/kaggle/input/notebooks/nikitospevindos/lab-03c-lightgbm-ablation/results: 8 прогонов, модели: ['lightgbm_abl']\n"}
+,{"stream_name":"stdout","time":21.755711169,"data":"/kaggle/input/notebooks/nikitospevindos/lab-02-llm-qwen/results: 7 прогонов, модели: ['qwen25_3b']\n"}
+,{"stream_name":"stdout","time":21.755715824,"data":"/kaggle/input/notebooks/nikitospevindos/lab-02-llm-phi/results: 2 прогонов, модели: ['phi35_mini']\n"}
+,{"stream_name":"stdout","time":21.80139872,"data":"/kaggle/input/notebooks/nikitospevindos/lab-03b-lightgbm/results: 3 прогонов, модели: ['lightgbm']\n"}
+,{"stream_name":"stdout","time":21.801450465,"data":"/kaggle/input/notebooks/nikitospevindos/lab-00-setup/results: 2 прогонов, модели: ['seasonal_naive']\n"}
+,{"stream_name":"stdout","time":21.80145709,"data":"\n"}
+,{"stream_name":"stdout","time":21.801461768,"data":"Всего конфигураций на тесте: 34; моделей: 10\n"}
+,{"stream_name":"stdout","time":21.801466984,"data":"name\n"}
+,{"stream_name":"stdout","time":21.801471075,"data":"Chronos-2            [graph_ctx336_test, cov_ctx336_test, zs_ctx672...\n"}
+,{"stream_name":"stdout","time":21.801475093,"data":"Chronos-Bolt Base     [zs_ctx672_test, zs_ctx336_test, zs_ctx168_test]\n"}
+,{"stream_name":"stdout","time":21.801478943,"data":"Lag-Llama             [zs_ctx168_test, zs_ctx336_test, zs_ctx672_test]\n"}
+,{"stream_name":"stdout","time":21.801482596,"data":"LightGBM                                                [trained_test]\n"}
+,{"stream_name":"stdout","time":21.801486415,"data":"Moirai 2.0 Small      [zs_ctx672_test, zs_ctx336_test, zs_ctx168_test]\n"}
+,{"stream_name":"stdout","time":21.80149033,"data":"Phi-3.5-mini                                       [zs_P2_ctx336_test]\n"}
+,{"stream_name":"stdout","time":21.801505867,"data":"Qwen2.5-3B           [zs_P2_ctx336_test, zs_P1_ctx336_test, zs_P3_c...\n"}
+,{"stream_name":"stdout","time":21.801509895,"data":"TTM r2               [zs_ctx672_test, zs_ctx168_test, zs_ctx336_tes...\n"}
+,{"stream_name":"stdout","time":21.801513753000002,"data":"TimesFM 2.5           [zs_ctx672_test, zs_ctx336_test, zs_ctx168_test]\n"}
+,{"stream_name":"stdout","time":21.80151776,"data":"Сезонный наивный                                       [baseline_test]\n"}
+,{"stream_name":"stdout","time":23.287083844,"data":"             name                  mode  n_windows  invalid_share  invalid_strict_share   wape  wape_ci_lo  wape_ci_hi  wape_peak      mae     rmse   mase    wql  cov80    ms_p50     ms_p95  gpu_peak_gb\n"}
+,{"stream_name":"stdout","time":23.287126286,"data":"         LightGBM          trained_test        600         0.0000                   NaN 0.0951      0.0870      0.1035     0.0631  39.0206 128.4834 0.7349    NaN    NaN    6.8116     6.8116          NaN\n"}
+,{"stream_name":"stdout","time":23.287132846,"data":"        Chronos-2        zs_ctx672_test        600         0.0000                   NaN 0.0979      0.0900      0.1056     0.0637  40.2080 134.2294 0.7612 0.0789 0.7544    3.3267     3.4424       0.7238\n"}
+,{"stream_name":"stdout","time":23.287138362,"data":" Moirai 2.0 Small        zs_ctx672_test        600         0.0000                   NaN 0.1012      0.0934      0.1092     0.0675  41.5362 133.7822 0.7878 0.0835 0.7849    0.5118     0.5370       1.0899\n"}
+,{"stream_name":"stdout","time":23.287143113,"data":"        Chronos-2     graph_ctx336_test        600         0.0000                   NaN 0.1012      0.0930      0.1095     0.0686  41.5377 138.2373 0.7775 0.0825 0.7706   21.9859    22.2263       0.6190\n"}
+,{"stream_name":"stdout","time":23.287147412,"data":"        Chronos-2       cov_ctx336_test        600         0.0000                   NaN 0.1036      0.0953      0.1121     0.0711  42.5400 139.2258 0.7968 0.0844 0.7378   21.1532    21.3754       0.6190\n"}
+,{"stream_name":"stdout","time":23.28715185,"data":"        Chronos-2        zs_ctx336_test        600         0.0000                   NaN 0.1040      0.0961      0.1122     0.0732  42.7062 140.2937 0.7898 0.0843 0.7560    1.9321     1.9687       0.6144\n"}
+,{"stream_name":"stdout","time":23.287156376,"data":"        Chronos-2 peft_lora_ctx672_test        600         0.0000                   NaN 0.1056      0.0977      0.1137     0.0719  43.3353 136.1405 0.8515 0.0847 0.8101    4.7748     5.0342       1.2335\n"}
+,{"stream_name":"stdout","time":23.287160173,"data":" Moirai 2.0 Small        zs_ctx336_test        600         0.0000                   NaN 0.1059      0.0979      0.1141     0.0720  43.4629 137.4566 0.8105 0.0877 0.7968    0.3082     0.3236       1.0392\n"}
+,{"stream_name":"stdout","time":23.287164045,"data":"        Chronos-2    fs5pct_ctx672_test        600         0.0000                   NaN 0.1064      0.0985      0.1148     0.0741  43.6925 137.4877 0.8596 0.0855 0.7869    4.1938     4.3129       1.2296\n"}
+,{"stream_name":"stdout","time":23.287168908,"data":"      TimesFM 2.5        zs_ctx672_test        600         0.0000                   NaN 0.1078      0.0992      0.1160     0.0787  44.2376 140.8191 0.8095 0.0890 0.8392   12.2217    16.3943       2.6382\n"}
+,{"stream_name":"stdout","time":23.287172988000002,"data":"Chronos-Bolt Base        zs_ctx672_test        600         0.0000                   NaN 0.1085      0.0999      0.1172     0.0850  44.5579 147.9573 0.8162 0.0886 0.8653    2.5662     2.6402       1.3159\n"}
+,{"stream_name":"stdout","time":23.28717732,"data":"      TimesFM 2.5        zs_ctx336_test        600         0.0000                   NaN 0.1114      0.1022      0.1199     0.0784  45.7376 142.5240 0.8363 0.0922 0.8293   11.6095    15.7673       2.6382\n"}
+,{"stream_name":"stdout","time":23.287190072,"data":"Chronos-Bolt Base        zs_ctx336_test        600         0.0000                   NaN 0.1116      0.1029      0.1200     0.0875  45.7954 148.8452 0.8435 0.0906 0.8672    1.5151     1.5730       1.0856\n"}
+,{"stream_name":"stdout","time":23.287193902,"data":"Chronos-Bolt Base        zs_ctx168_test        600         0.0000                   NaN 0.1143      0.1062      0.1226     0.0876  46.9389 144.6828 0.8647 0.0925 0.8827    0.8755     0.9372       0.9744\n"}
+,{"stream_name":"stdout","time":23.287197674,"data":"        Chronos-2 peft_lora_ctx336_test        600         0.0000                   NaN 0.1155      0.1062      0.1240     0.0880  47.4216 149.3468 0.9343 0.0935 0.7931    2.7400     2.8055       1.1153\n"}
+,{"stream_name":"stdout","time":23.287201936,"data":"        Chronos-2        zs_ctx168_test        600         0.0000                   NaN 0.1214      0.1116      0.1315     0.0965  49.8480 159.8804 0.8700 0.0974 0.7830    1.1818     1.1954       0.5623\n"}
+,{"stream_name":"stdout","time":23.287217346,"data":"        Chronos-2    fs5pct_ctx336_test        600         0.0000                   NaN 0.1222      0.1119      0.1318     0.0972  50.1599 158.7427 0.9736 0.0993 0.7592    2.4102     2.4527       1.1114\n"}
+,{"stream_name":"stdout","time":23.287224032,"data":"      TimesFM 2.5        zs_ctx168_test        600         0.0000                   NaN 0.1229      0.1142      0.1313     0.0920  50.4675 147.0053 0.9187 0.1013 0.8345   11.3911    15.5365       2.6382\n"}
+,{"stream_name":"stdout","time":23.287227909,"data":" Сезонный наивный         baseline_test        600         0.0000                   NaN 0.1267      0.1154      0.1384     0.0878  52.0242 170.8469 0.9503    NaN    NaN    0.0001     0.0001          NaN\n"}
+,{"stream_name":"stdout","time":23.287232952,"data":" Moirai 2.0 Small        zs_ctx168_test        600         0.0000                   NaN 0.1372      0.1288      0.1457     0.1003  56.3338 156.1778 1.0382 0.1110 0.8662    0.2641     0.3044       1.0127\n"}
+,{"stream_name":"stdout","time":23.287236963,"data":"     Phi-3.5-mini     zs_P2_ctx336_test        600         0.0000                1.0000 0.1536      0.1334      0.1810     0.1187  63.0547 236.4641 1.1149    NaN    NaN 6319.6193  6769.0173      10.5827\n"}
+,{"stream_name":"stdout","time":23.287241313,"data":"        Lag-Llama        zs_ctx672_test        600         0.0000                   NaN 0.1645      0.1554      0.1745     0.1142  67.5180 169.8135 1.3155 0.1512 0.9794 8711.5450  8714.9775       4.6583\n"}
+,{"stream_name":"stdout","time":23.287245782,"data":"        Lag-Llama        zs_ctx336_test        600         0.0000                   NaN 0.1934      0.1838      0.2037     0.1737  79.4013 195.5261 1.4603 0.1844 0.9835 3907.2389  3915.7660       2.4291\n"}
+,{"stream_name":"stdout","time":23.287249922,"data":"           TTM r2    fs5pct_ctx336_test        600         0.0000                   NaN 0.2207      0.2106      0.2322     0.1720  90.5970 212.1794 1.7141    NaN    NaN    0.0642     0.1012       0.0431\n"}
+,{"stream_name":"stdout","time":23.28725412,"data":"        Lag-Llama        zs_ctx168_test        600         0.0000                   NaN 0.2791      0.2674      0.2911     0.3013 114.5771 282.3586 2.1629 0.2490 0.9705 1776.4843  1783.1491       1.3158\n"}
+,{"stream_name":"stdout","time":23.287258383,"data":"       Qwen2.5-3B    fs3_P2_ctx336_test        600         0.0000                0.9467 0.3267      0.2917      0.3613     0.2768 134.1210 342.4130 2.7041    NaN    NaN 9542.0311 10683.5763      13.3542\n"}
+,{"stream_name":"stdout","time":23.287262981,"data":"           TTM r2        zs_ctx672_test        600         0.0000                   NaN 0.3408      0.3229      0.3624     0.1841 139.9175 278.9536 2.7060    NaN    NaN    0.0755     0.0898       0.0419\n"}
+,{"stream_name":"stdout","time":23.287271436,"data":"           TTM r2        zs_ctx336_test        600         0.0000                   NaN 0.3589      0.3418      0.3785     0.2175 147.3186 297.5103 2.7560    NaN    NaN    0.0506     0.0658       0.0243\n"}
+,{"stream_name":"stdout","time":23.287275798,"data":"           TTM r2        zs_ctx168_test        600         0.0000                   NaN 0.5173      0.4955      0.5424     0.2911 212.3553 394.5603 3.8826    NaN    NaN    0.0511     0.0852       0.0243\n"}
+,{"stream_name":"stdout","time":23.287280571,"data":"       Qwen2.5-3B     zs_P3_ctx336_test        600         0.0017                0.9950 0.7401      0.7122      0.7665     0.7563 303.8041 648.4683 5.8278    NaN    NaN 3736.4766  4013.5823       7.5195\n"}
+,{"stream_name":"stdout","time":23.287284892,"data":"       Qwen2.5-3B     zs_P2_ctx168_test        600         0.0000                0.9983 0.8047      0.7664      0.8570     0.7738 330.3408 706.5227 6.0661    NaN    NaN 1953.2804  2009.3684       7.4776\n"}
+,{"stream_name":"stdout","time":23.28728905,"data":"       Qwen2.5-3B     zs_P2_ctx672_test        600         0.0000                0.9967 0.8178      0.7976      0.8352     0.8499 335.7075 697.2334 6.2872    NaN    NaN 5603.2526  7058.3497       7.6177\n"}
+,{"stream_name":"stdout","time":23.28729339,"data":"       Qwen2.5-3B     zs_P2_ctx336_test        600         0.0017                0.9900 0.8208      0.7980      0.8430     0.8385 336.9459 705.2929 6.2238    NaN    NaN 3360.4425  3735.0488       7.6487\n"}
+,{"stream_name":"stdout","time":23.287297526,"data":"       Qwen2.5-3B     zs_P1_ctx336_test        600         0.0000                0.9967 0.9652      0.8909      1.0618     0.7257 396.2197 899.1171 6.7241    NaN    NaN 3431.6747  3684.4722       7.6131\n"}
+,{"stream_name":"stdout","time":23.287301795,"data":"\n"}
+,{"stream_name":"stdout","time":23.287305738,"data":"Сезонный наивный прогноз: WAPE = 0.1267\n"}
+,{"stream_name":"stdout","time":23.883339984,"data":"WAPE zero-shot по длине контекста, ч:\n"}
+,{"stream_name":"stdout","time":23.883370163,"data":"ctx                 168.0   336.0   672.0  разброс (max − min)\n"}
+,{"stream_name":"stdout","time":23.883374021,"data":"name                                                          \n"}
+,{"stream_name":"stdout","time":23.883388625,"data":"Chronos-2          0.1214  0.1040  0.0979               0.0235\n"}
+,{"stream_name":"stdout","time":23.883393535,"data":"Chronos-Bolt Base  0.1143  0.1116  0.1085               0.0058\n"}
+,{"stream_name":"stdout","time":23.883398031,"data":"Lag-Llama          0.2791  0.1934  0.1645               0.1146\n"}
+,{"stream_name":"stdout","time":23.883402482,"data":"Moirai 2.0 Small   0.1372  0.1059  0.1012               0.0360\n"}
+,{"stream_name":"stdout","time":23.883406948,"data":"Phi-3.5-mini          NaN  0.1536     NaN               0.0000\n"}
+,{"stream_name":"stdout","time":23.883411536,"data":"Qwen2.5-3B         0.8047  0.8208  0.8178               0.0161\n"}
+,{"stream_name":"stdout","time":23.883415951,"data":"TTM r2             0.5173  0.3589  0.3408               0.1765\n"}
+,{"stream_name":"stdout","time":23.883419953,"data":"TimesFM 2.5        0.1229  0.1114  0.1078               0.0152\n"}
+,{"stream_name":"stdout","time":23.883424697,"data":"\n"}
+,{"stream_name":"stdout","time":23.883428591,"data":"WAPE текстовых LLM по формулировке промпта (контекст 336 ч):\n"}
+,{"stream_name":"stdout","time":23.883432969,"data":"prompt            P1      P2      P3  разброс (max − min)\n"}
+,{"stream_name":"stdout","time":23.883447183,"data":"name                                                     \n"}
+,{"stream_name":"stdout","time":23.883451231,"data":"Phi-3.5-mini     NaN  0.1536     NaN               0.0000\n"}
+,{"stream_name":"stdout","time":23.883468721,"data":"Qwen2.5-3B    0.9652  0.8208  0.7401               0.2251\n"}
+,{"stream_name":"stdout","time":23.883473033,"data":"\n"}
+,{"stream_name":"stdout","time":23.883476882,"data":"WAPE по режимам (zero-shot / few-shot / PEFT / ковариаты / соседи):\n"}
+,{"stream_name":"stdout","time":23.883481429,"data":"regime                   PEFT (LoRA)  few-shot: 3 примера в промпте  few-shot: дообучение на 5% train  zero-shot  ковариаты  соседи по графу\n"}
+,{"stream_name":"stdout","time":23.883488753,"data":"name              ctx                                                                                                                       \n"}
+,{"stream_name":"stdout","time":23.883494024,"data":"Chronos-2         336.0       0.1155                            NaN                            0.1222     0.1040     0.1036           0.1012\n"}
+,{"stream_name":"stdout","time":23.883498966,"data":"                  672.0       0.1056                            NaN                            0.1064     0.0979        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883504541,"data":"Chronos-Bolt Base 336.0          NaN                            NaN                               NaN     0.1116        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883509623,"data":"                  672.0          NaN                            NaN                               NaN     0.1085        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883516014,"data":"Lag-Llama         336.0          NaN                            NaN                               NaN     0.1934        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883520101,"data":"                  672.0          NaN                            NaN                               NaN     0.1645        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883524426,"data":"Moirai 2.0 Small  336.0          NaN                            NaN                               NaN     0.1059        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883528437,"data":"                  672.0          NaN                            NaN                               NaN     0.1012        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883533129,"data":"Phi-3.5-mini      336.0          NaN                            NaN                               NaN     0.1536        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883537896,"data":"Qwen2.5-3B        336.0          NaN                         0.3267                               NaN     0.8208        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883542656,"data":"                  672.0          NaN                            NaN                               NaN     0.8178        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883547031,"data":"TTM r2            336.0          NaN                            NaN                            0.2207     0.3589        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883550549,"data":"                  672.0          NaN                            NaN                               NaN     0.3408        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883554185,"data":"TimesFM 2.5       336.0          NaN                            NaN                               NaN     0.1114        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883557834,"data":"                  672.0          NaN                            NaN                               NaN     0.1078        NaN              NaN\n"}
+,{"stream_name":"stdout","time":23.883567211,"data":"\n"}
+,{"stream_name":"stdout","time":23.883570802,"data":"Абляция LightGBM (lab-03c): WAPE по наборам признаков (A — только лаги … D — все признаки):\n"}
+,{"stream_name":"stdout","time":23.883575831,"data":"part             newslice    test\n"}
+,{"stream_name":"stdout","time":23.883579861,"data":"набор                            \n"}
+,{"stream_name":"stdout","time":23.883584504,"data":"A_lags             0.1101  0.1090\n"}
+,{"stream_name":"stdout","time":23.883588196,"data":"B_lags_calendar    0.0993  0.1034\n"}
+,{"stream_name":"stdout","time":23.883591791,"data":"C_plus_weather     0.0957  0.0993\n"}
+,{"stream_name":"stdout","time":23.883595314,"data":"D_full             0.0890  0.0950\n"}
+,{"stream_name":"stdout","time":24.449569594,"data":"Прошли фильтр: 14 из 32 конфигураций\n"}
+,{"stream_name":"stdout","time":24.449603871,"data":"Не прошли: Chronos-2 zs_ctx168_test, Moirai 2.0 Small zs_ctx168_test, TimesFM 2.5 zs_ctx168_test, Lag-Llama zs_ctx168_test, Lag-Llama zs_ctx336_test, TTM r2 zs_ctx672_test, Lag-Llama zs_ctx672_test, TTM r2 zs_ctx168_test, TTM r2 zs_ctx336_test, Qwen2.5-3B zs_P2_ctx336_test, Qwen2.5-3B zs_P1_ctx336_test, Qwen2.5-3B zs_P3_ctx336_test, Qwen2.5-3B fs3_P2_ctx336_test, TTM r2 fs5pct_ctx336_test, Chronos-2 fs5pct_ctx336_test, Qwen2.5-3B zs_P2_ctx168_test, Qwen2.5-3B zs_P2_ctx672_test, Phi-3.5-mini zs_P2_ctx336_test\n"}
+,{"stream_name":"stdout","time":24.44961748,"data":"             name                  mode   wape  wape_peak  calib  ms_p95    gpu  score\n"}
+,{"stream_name":"stdout","time":24.449621864,"data":"        Chronos-2        zs_ctx672_test 0.0979     0.0637 0.0456  3.4424 0.7238 0.9004\n"}
+,{"stream_name":"stdout","time":24.449626852,"data":" Moirai 2.0 Small        zs_ctx672_test 0.1012     0.0675 0.0151  0.5370 1.0899 0.8372\n"}
+,{"stream_name":"stdout","time":24.449631567,"data":"        Chronos-2     graph_ctx336_test 0.1012     0.0686 0.0294 22.2263 0.6190 0.7278\n"}
+,{"stream_name":"stdout","time":24.449635735,"data":" Moirai 2.0 Small        zs_ctx336_test 0.1059     0.0720 0.0032  0.3236 1.0392 0.7023\n"}
+,{"stream_name":"stdout","time":24.449640196,"data":"        Chronos-2        zs_ctx336_test 0.1040     0.0732 0.0440  1.9687 0.6144 0.6837\n"}
+,{"stream_name":"stdout","time":24.449644685,"data":"        Chronos-2 peft_lora_ctx672_test 0.1056     0.0719 0.0101  5.0342 1.2335 0.6672\n"}
+,{"stream_name":"stdout","time":24.449648832,"data":"        Chronos-2    fs5pct_ctx672_test 0.1064     0.0741 0.0131  4.3129 1.2296 0.6269\n"}
+,{"stream_name":"stdout","time":24.449653427,"data":"        Chronos-2       cov_ctx336_test 0.1036     0.0711 0.0622 21.3754 0.6190 0.5846\n"}
+,{"stream_name":"stdout","time":24.44965703,"data":"Chronos-Bolt Base        zs_ctx672_test 0.1085     0.0850 0.0653  2.6402 1.3159 0.4043\n"}
+,{"stream_name":"stdout","time":24.44966056,"data":"      TimesFM 2.5        zs_ctx672_test 0.1078     0.0787 0.0392 16.3943 2.6382 0.3866\n"}
+,{"stream_name":"stdout","time":24.449691876,"data":"Chronos-Bolt Base        zs_ctx336_test 0.1116     0.0875 0.0672  1.5730 1.0856 0.3160\n"}
+,{"stream_name":"stdout","time":24.449695703,"data":"        Chronos-2 peft_lora_ctx336_test 0.1155     0.0880 0.0069  2.8055 1.1153 0.3068\n"}
+,{"stream_name":"stdout","time":24.449699608,"data":"      TimesFM 2.5        zs_ctx336_test 0.1114     0.0784 0.0293 15.7673 2.6382 0.3059\n"}
+,{"stream_name":"stdout","time":24.449703475,"data":"Chronos-Bolt Base        zs_ctx168_test 0.1143     0.0876 0.0827  0.9372 0.9744 0.2152\n"}
+,{"stream_name":"stdout","time":24.449715889,"data":"\n"}
+,{"stream_name":"stdout","time":24.449720453,"data":"ВЫБРАНА: Chronos-2, конфигурация zs_ctx672_test: WAPE = 0.0979, балл = 0.900\n"}
+,{"stream_name":"stdout","time":50.253014921,"data":"           модель                 режим   WAPE  разность с выбранной  ДИ низ  ДИ верх значимо\n"}
+,{"stream_name":"stdout","time":50.253102217,"data":"         LightGBM          trained_test 0.0951               -0.0029 -0.0076   0.0018     нет\n"}
+,{"stream_name":"stdout","time":50.253111732,"data":" Moirai 2.0 Small        zs_ctx672_test 0.1012                0.0032 -0.0000   0.0067     нет\n"}
+,{"stream_name":"stdout","time":50.253118666,"data":"        Chronos-2     graph_ctx336_test 0.1012                0.0032  0.0005   0.0060      да\n"}
+,{"stream_name":"stdout","time":50.253124157,"data":"        Chronos-2       cov_ctx336_test 0.1036                0.0057  0.0027   0.0088      да\n"}
+,{"stream_name":"stdout","time":50.253151608,"data":"        Chronos-2        zs_ctx336_test 0.1040                0.0061  0.0037   0.0085      да\n"}
+,{"stream_name":"stdout","time":50.253157541,"data":"        Chronos-2 peft_lora_ctx672_test 0.1056                0.0076  0.0040   0.0113      да\n"}
+,{"stream_name":"stdout","time":50.253163015,"data":"        Chronos-2    fs5pct_ctx672_test 0.1064                0.0085  0.0047   0.0128      да\n"}
+,{"stream_name":"stdout","time":50.253167811,"data":"      TimesFM 2.5        zs_ctx672_test 0.1078                0.0098  0.0070   0.0130      да\n"}
+,{"stream_name":"stdout","time":50.253172774,"data":"Chronos-Bolt Base        zs_ctx672_test 0.1085                0.0106  0.0061   0.0154      да\n"}
+,{"stream_name":"stdout","time":50.253178049,"data":"        Chronos-2 peft_lora_ctx336_test 0.1155                0.0176  0.0128   0.0226      да\n"}
+,{"stream_name":"stdout","time":50.253183287,"data":"        Chronos-2        zs_ctx168_test 0.1214                0.0235  0.0174   0.0310      да\n"}
+,{"stream_name":"stdout","time":50.253188484,"data":"        Chronos-2    fs5pct_ctx336_test 0.1222                0.0242  0.0187   0.0303      да\n"}
+,{"stream_name":"stdout","time":50.253193801,"data":" Сезонный наивный         baseline_test 0.1267                0.0288  0.0216   0.0362      да\n"}
+,{"stream_name":"stdout","time":50.253199983,"data":"     Phi-3.5-mini     zs_P2_ctx336_test 0.1536                0.0557  0.0370   0.0829      да\n"}
+,{"stream_name":"stdout","time":50.253205266,"data":"        Lag-Llama        zs_ctx672_test 0.1645                0.0665  0.0570   0.0756      да\n"}
+,{"stream_name":"stdout","time":50.253211164,"data":"           TTM r2    fs5pct_ctx336_test 0.2207                0.1227  0.1127   0.1333      да\n"}
+,{"stream_name":"stdout","time":50.253233419,"data":"       Qwen2.5-3B    fs3_P2_ctx336_test 0.3267                0.2288  0.1934   0.2644      да\n"}
+,{"stream_name":"stdout","time":50.684695723,"data":"\n"}
+,{"stream_name":"stdout","time":50.684738255,"data":"WAPE по срезу «кластер»:\n"}
+,{"stream_name":"stdout","time":50.684747196000004,"data":"   Chronos-2 (выбранная)  Сезонный наивный  LightGBM  Phi-3.5-mini (лучшая LLM)   окон\n"}
+,{"stream_name":"stdout","time":50.684753931,"data":"0                  0.124             0.152     0.112                      0.176  150.0\n"}
+,{"stream_name":"stdout","time":50.684759438,"data":"1                  0.091             0.121     0.086                      0.134  150.0\n"}
+,{"stream_name":"stdout","time":50.684765087,"data":"2                  0.106             0.139     0.106                      0.158  150.0\n"}
+,{"stream_name":"stdout","time":50.684785845,"data":"3                  0.093             0.119     0.091                      0.156  150.0\n"}
+,{"stream_name":"stdout","time":50.684790715,"data":"\n"}
+,{"stream_name":"stdout","time":50.684795483,"data":"WAPE по срезу «размер станции»:\n"}
+,{"stream_name":"stdout","time":50.684799462,"data":"              Chronos-2 (выбранная)  Сезонный наивный  LightGBM  Phi-3.5-mini (лучшая LLM)   окон\n"}
+,{"stream_name":"stdout","time":50.684804212,"data":"Q1 (малые)                    0.155             0.196     0.149                      0.229   90.0\n"}
+,{"stream_name":"stdout","time":50.68480911,"data":"Q2                            0.109             0.133     0.100                      0.154  120.0\n"}
+,{"stream_name":"stdout","time":50.684813201,"data":"Q3                            0.105             0.129     0.095                      0.158   90.0\n"}
+,{"stream_name":"stdout","time":50.684817263,"data":"Q4                            0.097             0.128     0.091                      0.142  135.0\n"}
+,{"stream_name":"stdout","time":50.684821331,"data":"Q5 (крупные)                  0.094             0.123     0.094                      0.154  165.0\n"}
+,{"stream_name":"stdout","time":50.684825482,"data":"\n"}
+,{"stream_name":"stdout","time":50.684829189,"data":"WAPE по срезу «будни / выходные»:\n"}
+,{"stream_name":"stdout","time":50.684833269,"data":"          Chronos-2 (выбранная)  Сезонный наивный  LightGBM  Phi-3.5-mini (лучшая LLM)   окон\n"}
+,{"stream_name":"stdout","time":50.684837662,"data":"будний                    0.081             0.105     0.076                      0.137  440.0\n"}
+,{"stream_name":"stdout","time":50.684841815,"data":"выходной                  0.175             0.225     0.179                      0.229  160.0\n"}
+,{"stream_name":"stdout","time":50.684845969,"data":"\n"}
+,{"stream_name":"stdout","time":50.684849701,"data":"WAPE по срезу «особый день»:\n"}
+,{"stream_name":"stdout","time":50.684853723,"data":"                   Chronos-2 (выбранная)  Сезонный наивный  LightGBM  Phi-3.5-mini (лучшая LLM)   окон\n"}
+,{"stream_name":"stdout","time":50.68485811,"data":"городское событие                  0.229             0.230     0.216                      0.282   40.0\n"}
+,{"stream_name":"stdout","time":50.684868749,"data":"обычный                            0.092             0.122     0.090                      0.148  560.0\n"}
+,{"stream_name":"stdout","time":50.684872296,"data":"\n"}
+,{"stream_name":"stdout","time":50.684876203,"data":"WAPE по срезу «событие у станции»:\n"}
+,{"stream_name":"stdout","time":50.684879008,"data":"                   Chronos-2 (выбранная)  Сезонный наивный  LightGBM  Phi-3.5-mini (лучшая LLM)   окон\n"}
+,{"stream_name":"stdout","time":50.68488184,"data":"нет                                0.096             0.125     0.093                      0.152  593.0\n"}
+,{"stream_name":"stdout","time":50.684884509,"data":"событие у станции                  0.188             0.190     0.159                      0.223    7.0\n"}
+,{"stream_name":"stdout","time":50.684887274,"data":"\n"}
+,{"stream_name":"stdout","time":50.684889717,"data":"WAPE по срезу «погода»:\n"}
+,{"stream_name":"stdout","time":50.684892361,"data":"              Chronos-2 (выбранная)  Сезонный наивный  LightGBM  Phi-3.5-mini (лучшая LLM)   окон\n"}
+,{"stream_name":"stdout","time":50.684899437,"data":"дождь ≥ 5 мм                  0.111             0.110     0.105                      0.225   40.0\n"}
+,{"stream_name":"stdout","time":50.684902296,"data":"жара ≥ 30 °C                  0.067             0.099     0.066                      0.109  120.0\n"}
+,{"stream_name":"stdout","time":50.684926059,"data":"обычная                       0.106             0.136     0.103                      0.163  440.0\n"}
+,{"stream_name":"stdout","time":51.438385383,"data":"          вид station                                                 станция           день cluster         size       y      yhat  wape  wape_naive  open_hours           special     station_event weather\n"}
+,{"stream_name":"stdout","time":51.438434134,"data":"   абсолютная     624 Chambers St/WTC/Park Place/Cortlandt St (2,3,A,C,E,R,W) 25.07.2026 Sat       3 Q5 (крупные) 37642.0 22431.948 0.411       0.451          24           обычный               нет обычная\n"}
+,{"stream_name":"stdout","time":51.43844131,"data":"   абсолютная     624 Chambers St/WTC/Park Place/Cortlandt St (2,3,A,C,E,R,W) 11.09.2026 Fri       3 Q5 (крупные) 61876.0 49951.295 0.204       0.387          24           обычный               нет обычная\n"}
+,{"stream_name":"stdout","time":51.438448358,"data":"   абсолютная     167                          W 4 St-Wash Sq (A,C,E,B,D,F,M) 25.07.2026 Sat       3 Q5 (крупные) 44726.0 33797.450 0.246       0.386          24           обычный               нет обычная\n"}
+,{"stream_name":"stdout","time":51.438454022,"data":"   абсолютная     617            Atlantic Av-Barclays Ctr (2,3,4,5,B,D,N,Q,R) 19.07.2026 Sun       2 Q5 (крупные) 27341.0 19154.311 0.342       0.313          24 городское событие               нет обычная\n"}
+,{"stream_name":"stdout","time":51.438459797,"data":"   абсолютная     617            Atlantic Av-Barclays Ctr (2,3,4,5,B,D,N,Q,R) 07.07.2026 Tue       2 Q5 (крупные) 35214.0 26783.713 0.249       0.253          24           обычный событие у станции обычная\n"}
+,{"stream_name":"stdout","time":51.438465474,"data":"относительная     305                                 137 St-City College (1) 05.09.2026 Sat       2           Q4  9707.0  5563.238 0.428       0.421          24           обычный               нет обычная\n"}
+,{"stream_name":"stdout","time":51.438471158,"data":"относительная     414                                     Bowling Green (4,5) 25.07.2026 Sat       3 Q5 (крупные) 14445.0  8693.474 0.400       0.524          24           обычный               нет обычная\n"}
+,{"stream_name":"stdout","time":51.438478919,"data":"относительная      58                     Coney Island-Stillwell Av (D,F,N,Q) 25.07.2026 Sat       1           Q4 15674.0 10916.116 0.327       0.586          24           обычный               нет обычная\n"}
+,{"stream_name":"stdout","time":51.438484221,"data":"относительная      58                     Coney Island-Stillwell Av (D,F,N,Q) 11.09.2026 Fri       1           Q4 11014.0 13241.581 0.287       0.417          24           обычный               нет обычная\n"}
+,{"stream_name":"stdout","time":51.43848901,"data":"относительная     124                                         Montrose Av (L) 19.07.2026 Sun       2           Q3  5846.0  4589.987 0.286       0.290          24 городское событие               нет обычная\n"}
+,{"stream_name":"stderr","time":73.952085479,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stderr","time":73.952140247,"data":"\n"}
+,{"stream_name":"stderr","time":73.952145078,"data":"Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"}
+,{"stream_name":"stdout","time":82.276333826,"data":"Повтор на исходных 600 окнах: WAPE 0.0979 (в lab-01/03 было 0.0979, разница +0.0000)\n"}
+,{"stream_name":"stdout","time":104.60718618,"data":"Новый срез (384 станций, 5698 окон): WAPE 0.0953 [0.0919; 0.0988], наивный 0.1235\n"}
+,{"stream_name":"stdout","time":109.255373937,"data":"Праздники (4.07 и 7.09, 837 окон): WAPE 0.4473 [0.4152; 0.4806], наивный 0.5969\n"}
+,{"stream_name":"stdout","time":113.806098947,"data":"           с чем  разность WAPE (выбранная − другая)  ДИ низ  ДИ верх\n"}
+,{"stream_name":"stdout","time":113.806147373,"data":"Сезонный наивный                             -0.0282 -0.0315  -0.0254\n"}
+,{"stream_name":"stdout","time":113.806156001,"data":"        LightGBM                              0.0063  0.0046   0.0081\n"}
+,{"stream_name":"stdout","time":114.481295791,"data":"\n"}
+,{"stream_name":"stdout","time":114.48134353,"data":"WAPE по кластерам: подвыборка и новые станции\n"}
+,{"stream_name":"stdout","time":114.481352147,"data":"        подвыборка (40)                              новый срез (384)                         \n"}
+,{"stream_name":"stdout","time":114.481358107,"data":"  Chronos-2 (выбранная) Сезонный наивный   окон Chronos-2 (выбранная) Сезонный наивный    окон\n"}
+,{"stream_name":"stdout","time":114.481368261,"data":"0                 0.124            0.152  150.0                 0.104            0.131  1266.0\n"}
+,{"stream_name":"stdout","time":114.481371985,"data":"1                 0.091            0.121  150.0                 0.090            0.114  1990.0\n"}
+,{"stream_name":"stdout","time":114.48137542,"data":"2                 0.106            0.139  150.0                 0.097            0.127  1341.0\n"}
+,{"stream_name":"stdout","time":114.481378913,"data":"3                 0.093            0.119  150.0                 0.095            0.124  1101.0\n"}
+,{"stream_name":"stdout","time":115.103308708,"data":"Прогоны этого ноутбука:\n"}
+,{"stream_name":"stdout","time":115.103341938,"data":"         model                    mode  n_windows   wape  wape_ci_lo  wape_ci_hi   mase  cov80  ms_p95\n"}
+,{"stream_name":"stdout","time":115.103350417,"data":"      chronos2   zs_ctx672_repeat_test        600 0.0979      0.0900      0.1056 0.7612 0.7544 18.6141\n"}
+,{"stream_name":"stdout","time":115.10335631,"data":"      chronos2 zs_ctx672_newslice_test       5698 0.0953      0.0919      0.0988 0.7626 0.7579  3.3625\n"}
+,{"stream_name":"stdout","time":115.103362075,"data":"seasonal_naive  baseline_newslice_test       5698 0.1235      0.1191      0.1278 0.9697    NaN     NaN\n"}
+,{"stream_name":"stdout","time":115.103367878,"data":"      chronos2 zs_ctx672_holidays_test        837 0.4473      0.4152      0.4806 2.2547 0.6024  3.6608\n"}
+,{"stream_name":"stdout","time":115.103373497,"data":"seasonal_naive  baseline_holidays_test        837 0.5969      0.5644      0.6297 2.7235    NaN     NaN\n"}
+,{"stream_name":"stdout","time":115.103379196,"data":"\n"}
+,{"stream_name":"stdout","time":115.103384925,"data":"Выбранная модель: Chronos-2, zs_ctx672_test\n"}
+,{"stream_name":"stdout","time":115.103391201,"data":"  тест (40 станций):       WAPE 0.0979  vs наивный 0.1267\n"}
+,{"stream_name":"stdout","time":115.103410068,"data":"  новые станции (384):     WAPE 0.0953  vs наивный 0.1235\n"}
+,{"stream_name":"stdout","time":115.103415897,"data":"  праздники (424 станций): WAPE 0.4473  vs наивный 0.5969\n"}
+,{"stream_name":"stdout","time":115.103420803,"data":"\n"}
+,{"stream_name":"stdout","time":115.103428697,"data":"Файлы: ablation_lightgbm.csv, all_runs.csv, errors_by_group.csv, errors_by_hour.csv, newslice_by_cluster.csv, paired_bootstrap.csv, runs.csv, selection_table.csv, sens_context.csv, sens_prompt.csv, sens_regime.csv, table_main.csv, table_test_all.csv, top10_errors.csv | рисунки: 01_wape_ci.png, 02_context.png, 03_wape_by_hour.png, 04_top10_errors.png, 05_newslice_by_hour.png\n"}
+,{"stream_name":"stderr","time":121.125059406,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":121.125103557,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":121.330292665,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":121.330331323,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":122.145075044,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":122.262092136,"data":"[NbConvertApp] Writing 813998 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":125.083871136,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":125.967494612,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":125.967561217,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":125.967857345,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":125.968217619,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":125.96847335,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":125.968800214,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":125.969096773,"data":"[NbConvertApp] Writing 571618 bytes to __results__.html\n"}
+]

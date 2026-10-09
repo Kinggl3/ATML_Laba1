@@ -1,0 +1,15 @@
+{
+ "model": "chronos2",
+ "mode": "zs_ctx672_test",
+ "name": "Chronos-2",
+ "wape": 0.097946434851429,
+ "score": 0.9004411454665153,
+ "weights": {
+  "wape": 0.5,
+  "wape_peak": 0.15,
+  "calib": 0.15,
+  "ms_p95": 0.1,
+  "gpu": 0.1
+ },
+ "naive_wape": 0.1267303994077835
+}
